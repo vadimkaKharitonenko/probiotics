@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+* {
+	box-sizing: border-box;
+	outline: none;
+	font-smooth: always;
+	font-variant-ligatures: none;
+	text-rendering: optimizeLegibility!important;
+	font-smoothing: antialiased!important;
+	text-shadow: rgba(0, 0, 0, .01) 0 0 0.5px;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-variant-ligatures: none;
+	-webkit-font-smoothing: antialiased!important;
+	font-synthesis: none;
+	-moz-font-feature-settings: 'kern';
+}
