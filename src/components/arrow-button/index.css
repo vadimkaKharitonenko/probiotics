@@ -1,0 +1,16 @@
+.arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    border: 1px solid rgba(86, 131, 238, .3);
+}
+
+.arrow-button:hover {
+    border-color: rgba(169, 193, 233, .3);
+}
+
+.arrow-button:active {
+    border-color:#5683ee;
+}

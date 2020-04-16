@@ -1,0 +1,6 @@
+mixin field({placeholder, error, value})
+    div(class=`field ${error ? 'error' : ''}`)
+        input(type="text" placeholder= placeholder value = value).field__input
+        if (error)
+            span.error-text Имя и фамилия должны быть введены на кирилице
+        

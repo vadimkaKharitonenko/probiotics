@@ -1,0 +1,26 @@
+.socials {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-column-gap: 6px;
+}
+
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    border: 1px solid rgba(86, 131, 238, .3);
+}
+
+.socials__link:active {
+    border-color: #5683ee;
+}
+
+.socials__link:hover img {
+    filter: opacity(.3);
+}
+
+.socials__link:active img {
+    filter: opacity(1);
+}

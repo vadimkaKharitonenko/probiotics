@@ -1,0 +1,7 @@
+.partner-logo {
+    filter: opacity(0.2);
+}
+
+.partner-logo:hover {
+    filter: opacity(1);
+}

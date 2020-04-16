@@ -1,0 +1,36 @@
+.button {
+    color: #ffffff;
+    font-family: 'UB', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.button.-theme-red {
+    padding: 15px 25px;
+    box-shadow: 0 0 51px rgba(176, 202, 253, 0.24);
+    background-color: #d5442f;
+}
+
+.button.-theme-red:hover {
+    background-color: #f05640;
+}
+
+.button.-theme-red:active {
+    background-color: #c9260f;
+}
+
+.button.-theme-blue {
+    padding: 14px 18px 17px;
+    box-shadow: 0 0 51px rgba(176, 202, 253, 0.24);
+    background-color: #487cd1;
+}
+
+.button.-theme-blue:hover {
+    background-color: #5f93e7;
+}
+
+.button.-theme-blue:active {
+    background-color: #1a5ecd;
+}

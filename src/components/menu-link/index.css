@@ -1,0 +1,13 @@
+.menu-link {
+    font-family: 'UM', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 66px;
+    text-transform: uppercase;
+    color: #8196ad;
+    letter-spacing: 1.8px;
+}
+
+.menu-link.active {
+    color: #487cd1;
+}

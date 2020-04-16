@@ -1,0 +1,33 @@
+.heading {
+    width: max-content;
+}
+
+.heading.-level-1 {
+    font-family: 'UM', sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 90px;
+    letter-spacing: 0;
+}
+
+.heading.-level-2 {
+    font-family: 'UM', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: 0;
+}
+
+.heading.-level-3 {
+    font-family: 'UM', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 66px;
+}
+
+.heading.-level-4 {
+    font-family: 'UR', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 66px;
+}

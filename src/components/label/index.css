@@ -1,0 +1,36 @@
+.label {
+    width: max-content;
+    padding: 3px 6px 2px;
+    font-family: 'UM', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+}
+
+.label.-theme-blue {
+    background-color: #6092d9;
+    color: #ffffff;
+}
+
+.label.-theme-blue:hover {
+    background-color: #75a9f3;
+}
+
+.label.-theme-red {
+    background-color: #d5442f;
+    color: #fefbf1;
+}
+
+.label.-theme-red:hover {
+    background-color: #f05640;
+}
+
+.label.-theme-blue:active {
+    background-color: #0e7dd5;
+}
+
+.label.-theme-red:active {
+    background-color: #c9260f;
+}

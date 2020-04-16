@@ -1,0 +1,46 @@
+.plus-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(72, 124, 209, .3);
+    font-family: 'UL', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4.68px;
+    color: #79a7e0;
+}
+
+.plus-button:hover {
+    border-color: #a9c1e9;
+}
+
+.plus-button:active {
+    border-color: #487cd1;
+}
+
+.plus-button.active div {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+}
+
+.plus-button div {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.plus-button.active div:first-child,
+.plus-button div:last-child {
+    display: flex;
+}
+
+.plus-button div:first-child,
+.plus-button.active div:last-child {
+    display: none;
+}

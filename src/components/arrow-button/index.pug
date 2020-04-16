@@ -1,0 +1,7 @@
+mixin arrow-button({direction})
+    button.arrow-button
+        if (direction === 'left')
+            img(src=require('../../assets/img/arrow-left.png'), alt="left")
+        else
+            img(src=require('../../assets/img/arrow-right.png'), alt="right")
+        

@@ -1,0 +1,39 @@
+.field {
+    
+}
+
+.field .error-text {
+    display: none;
+}
+
+.field.error .error-text {
+    display: block;
+    padding: 8px 19px;
+    font-family: 'UR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #d03721;
+}
+
+.field.error .field__input {
+    color: #ed3325;
+    border-color: #f05640;;
+}
+
+.field__input {
+    width: 100%;
+    padding: 11px 21px;
+    border: 1px solid #d7dde7;
+    font-family: 'UR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #32373e;
+}
+
+.field__input::placeholder {
+    color: #7c879b;
+}
+
+.field__input:focus {
+    border-color: #a9c1e9;
+}

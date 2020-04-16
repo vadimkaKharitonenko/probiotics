@@ -1,0 +1,242 @@
+include ../../components/heading/index.pug
+include ../../components/text/index.pug
+include ../../components/hightlighted-text/index.pug
+include ../../components/description-text/index.pug
+include ../../components/link/index.pug
+include ../../components/name-text/index.pug
+include ../../components/menu-link/index.pug
+include ../../components/plus-button/index.pug
+include ../../components/label/index.pug
+include ../../components/partner-logo/index.pug
+include ../../components/button/index.pug
+include ../../components/arrow-button/index.pug
+include ../../components/socials/index.pug
+include ../../components/header/index.pug
+include ../../components/field/index.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Style guide
+    body
+    main
+        .style-guide
+            .style-guide__left
+                +heading({tag: 'h1', level: 1, className: 'style-guide__heading-1'})
+                    | Слово эксперта
+
+                +heading({tag: 'h2', level: 2, className: 'style-guide__heading-2'})
+                    | Закваски для молочных заводов
+
+                .style-guide__text
+                    +text()
+                        | Мы производим закваски для молочной промышленности с 2005 года. В нашем ассортименте есть закваски для производства традиционных.
+
+                +heading({tag: 'h3', level: 3, className: 'style-guide__heading-3'})
+                    | Производство пробиотиков
+
+                .style-guide__hightlighted-text
+                    +hightlighted-text()
+                        | «Вектор-БиАльгам» - одно из первых предприятий научного центра, которому удалось направить фундаментальные знания».
+
+                +heading({tag: 'h4', level: 4, className: 'style-guide__heading-4'})
+                    | Пробиотики предназначены
+
+                .style-guide__description-text
+                    +description-text()
+                        | Качество наших заквасок подтверждают российские свидетельства о государственной регистрации и сертификаты соответствия, а также доверие наших партнеров, ведь уже много лет мы сотрудничаем с молочными заводами по всей России.
+
+                    +description-text()
+                        | На пробиотических заквасках мы производим кисломолочные продукты собственной серии «Бифидом», которые знают и любят жители Новосибирска. Эти продукты являются запатентованными разработками компании, имеют уникальные свойства и оригинальный вкус.
+
+                +link({href: './'})
+                    | Сертификат НАССР
+
+                +name-text()
+                    | Наименование 1
+
+                .style-guide__menu-links
+                    +menu-link({href: './', active: true})
+                        | О наших заквасках         
+                    +menu-link({href: './'})
+                        | Структурообразующие   
+                    +menu-link({href: './'})
+                        | закваски
+            .style-guide__right
+                .style-guide__plus-buttons
+                    .plus-button-block
+                        +plus-button({active: true})          
+                    .plus-button-block-2
+                        +plus-button({active: true})             
+                    .plus-button-block
+                        +plus-button({active: false})
+                .style-guide__labels
+                    .labels__block
+                        +label({theme: 'blue'})
+                            | Новости
+                        +label({theme: 'red'})
+                            | Пресс-релиз
+                    .labels__block-2
+                        +label({theme: 'blue'})
+                            | Новости
+                        +label({theme: 'red'})
+                            | Пресс-релиз
+                    .labels__block
+                        +label({theme: 'blue'})
+                            | Новости
+                        +label({theme: 'red'})
+                            | Пресс-релиз
+                .style-guide__links
+                    .style-guide__link
+                        svg(width='13' height='18' xmlns='http://www.w3.org/2000/svg' version='1.1', xmlns:xlink='http://www.w3.org/1999/xlink', xmlns:avocode='https://avocode.com/' viewBox='0 0 13 18')
+                            path(d='M13.00002,5.09128v11.43933c0,0.81027 -0.64762,1.46949 -1.44356,1.46949h-10.1128c-0.79617,0 -1.44367,-0.65922 -1.44367,-1.46949v-15.06082c0,-0.81027 0.64751,-1.46949 1.44367,-1.46949h6.55495c0.09281,0 0.18162,0.03748 0.24708,0.10384l4.65214,4.7353c0.06546,0.06683 0.1022,0.15743 0.1022,0.25185zM8.34822,1.21442v2.76289c0,0.41758 0.33405,0.75843 0.74455,0.75843h2.71408zM12.30112,5.44713h-3.20835c-0.79605,0 -1.44367,-0.65954 -1.44367,-1.46981v-3.26549h-6.20544c-0.41073,0 -0.74478,0.33942 -0.74478,0.75795v15.06082c0,0.41805 0.33405,0.75795 0.74478,0.75795h10.1128c0.41061,0 0.74467,-0.3399 0.74467,-0.75795z' fill='#487cd1' fill-opacity='1')
+                        +link({href: './'})
+                            | Сертификат НАССР
+                    .style-guide__link.-link-2
+                        svg(width='13' height='18' xmlns='http://www.w3.org/2000/svg' version='1.1', xmlns:xlink='http://www.w3.org/1999/xlink', xmlns:avocode='https://avocode.com/' viewBox='0 0 13 18')
+                            path(d='M13.00002,5.09128v11.43933c0,0.81027 -0.64762,1.46949 -1.44356,1.46949h-10.1128c-0.79617,0 -1.44367,-0.65922 -1.44367,-1.46949v-15.06082c0,-0.81027 0.64751,-1.46949 1.44367,-1.46949h6.55495c0.09281,0 0.18162,0.03748 0.24708,0.10384l4.65214,4.7353c0.06546,0.06683 0.1022,0.15743 0.1022,0.25185zM8.34822,1.21442v2.76289c0,0.41758 0.33405,0.75843 0.74455,0.75843h2.71408zM12.30112,5.44713h-3.20835c-0.79605,0 -1.44367,-0.65954 -1.44367,-1.46981v-3.26549h-6.20544c-0.41073,0 -0.74478,0.33942 -0.74478,0.75795v15.06082c0,0.41805 0.33405,0.75795 0.74478,0.75795h10.1128c0.41061,0 0.74467,-0.3399 0.74467,-0.75795z' fill='#487cd1' fill-opacity='1')
+                        +link({href: './'})
+                            | Сертификат НАССР
+                    .style-guide__link
+                        svg(width='13' height='18' xmlns='http://www.w3.org/2000/svg' version='1.1', xmlns:xlink='http://www.w3.org/1999/xlink', xmlns:avocode='https://avocode.com/' viewBox='0 0 13 18')
+                            path(d='M13.00002,5.09128v11.43933c0,0.81027 -0.64762,1.46949 -1.44356,1.46949h-10.1128c-0.79617,0 -1.44367,-0.65922 -1.44367,-1.46949v-15.06082c0,-0.81027 0.64751,-1.46949 1.44367,-1.46949h6.55495c0.09281,0 0.18162,0.03748 0.24708,0.10384l4.65214,4.7353c0.06546,0.06683 0.1022,0.15743 0.1022,0.25185zM8.34822,1.21442v2.76289c0,0.41758 0.33405,0.75843 0.74455,0.75843h2.71408zM12.30112,5.44713h-3.20835c-0.79605,0 -1.44367,-0.65954 -1.44367,-1.46981v-3.26549h-6.20544c-0.41073,0 -0.74478,0.33942 -0.74478,0.75795v15.06082c0,0.41805 0.33405,0.75795 0.74478,0.75795h10.1128c0.41061,0 0.74467,-0.3399 0.74467,-0.75795z' fill='#487cd1' fill-opacity='1')
+                        +link({href: './'})
+                            | Сертификат НАССР
+
+                .style-guide__partner-logos
+                    .partner-logo-item  
+                        +partner-logo({img: require('../../assets/img/partner-logo.png')})
+                    .partner-logo-item  
+                        +partner-logo({img: require('../../assets/img/partner-logo.png')})
+
+                .style-guide__buttons
+                    .reds
+                        +button({theme: 'red'})
+                            | Задать
+                        +button({theme: 'red'})
+                            | Задать
+                        +button({theme: 'red'})
+                            | Задать
+                    .blues
+                        +button({theme: 'blue'})
+                            | Узнать больше
+                        +button({theme: 'blue'})
+                            | Узнать больше
+                        +button({theme: 'blue'})
+                            | Узнать больше
+
+                .style-guide__arrow-buttons
+                    .arrow-buttons
+                        +arrow-button({direction: 'left'})
+                        +arrow-button({direction: 'right'})
+                    .arrow-buttons
+                        +arrow-button({direction: 'left'})
+                        +arrow-button({direction: 'right'})
+                    .arrow-buttons
+                        +arrow-button({direction: 'left'})
+                        +arrow-button({direction: 'right'})
+
+            .style-guide__socials
+                +socials()
+                +socials()
+                +socials()
+
+            .style-guide__header
+                +header({menu: [
+                    {
+                        text: 'Пробиотики',
+                        href: './',
+                        active: true
+                    },
+                    {
+                        text: 'Вакцина Гепатита А',
+                        href: './',
+                        active: false
+                    },
+                    {
+                        text: 'Ингредиенты',
+                        href: './',
+                        active: false
+                    },
+                    {
+                        text: 'Контрактное производство',
+                        href: './',
+                        active: false
+                    }
+                ]})
+
+                +header({menu: [
+                    {
+                        text: 'Пробиотики',
+                        href: './',
+                        active: true
+                    },
+                    {
+                        text: 'Вакцина Гепатита А',
+                        href: './',
+                        active: false
+                    },
+                    {
+                        text: 'Ингредиенты',
+                        href: './',
+                        active: false
+                    },
+                    {
+                        text: 'Контрактное производство',
+                        href: './',
+                        active: false
+                    }
+                ]})
+
+                +header({menu: [
+                    {
+                        text: 'Пробиотики',
+                        href: './',
+                        active: true
+                    },
+                    {
+                        text: 'Вакцина Гепатита А',
+                        href: './',
+                        active: false
+                    },
+                    {
+                        text: 'Ингредиенты',
+                        href: './',
+                        active: false
+                    },
+                    {
+                        text: 'Контрактное производство',
+                        href: './',
+                        active: false
+                    }
+                ]})
+
+                +header({menu: [
+                    {
+                        text: 'Пробиотики',
+                        href: './',
+                        active: true
+                    },
+                    {
+                        text: 'Вакцина Гепатита А',
+                        href: './',
+                        active: false
+                    },
+                    {
+                        text: 'Ингредиенты',
+                        href: './',
+                        active: false
+                    },
+                    {
+                        text: 'Контрактное производство',
+                        href: './',
+                        active: false
+                    }
+                ]})
+
+            .style-guide__inputs
+                +field({placeholder: 'Имя и фамилия', error: false, value: ''})
+                +field({placeholder: 'Имя и фамилия', error: false, value: 'srgsrg'})
+                +field({placeholder: 'Имя и фамилия', error: true, value: 'Fgidjlfsxb'})

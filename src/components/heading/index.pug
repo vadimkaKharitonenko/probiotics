@@ -1,0 +1,3 @@
+mixin heading({ tag, level, className })
+    #{tag}(class=`heading -level-${level} ${className ? className : ''}`)
+        block
