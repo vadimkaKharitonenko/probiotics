@@ -1,0 +1,8 @@
+mixin select({current, options, expanded})
+    div(class=`select ${expanded ? 'is-expanded' : ''}`)
+        .select__current.js-select-current
+            span= current
+            img(src=require('../../assets/img/angle.png'), alt="select current").select__arrow
+        .select__options
+            each option in options
+                .option.js-select-option= option.value

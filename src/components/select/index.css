@@ -1,0 +1,55 @@
+.select {
+    position: relative;
+    color: #32373e;
+    font-family: 'UR', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 31px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.select.is-expanded {
+    box-shadow: 0 0 40px rgba(215, 221, 231, 0.19);
+}
+
+.select.is-expanded .select__options {
+    position: absolute;
+    display: block;
+    background-color: #ffffff;
+}
+
+.select.is-expanded .select__arrow {
+    transform: rotate(180deg);
+}
+
+.select.is-expanded .select__current {
+    border-bottom: none;
+}
+
+.select__current {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 13px 0 20px;
+    border: 1px solid #d7dde7;
+}
+
+.select__options {
+    display: none;
+    width: 100%;
+    margin-top: -5px;
+    border-left: 1px solid #d7dde7;
+    border-right: 1px solid #d7dde7;
+    border-bottom: 1px solid #d7dde7;
+}
+
+.select__options .option {
+    padding: 0 20px;
+}
+
+.select__options .option:hover {
+    background-color: rgba(215, 221, 231, .3);
+    color: #487cd1;
+}

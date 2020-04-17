@@ -13,6 +13,7 @@ include ../../components/arrow-button/index.pug
 include ../../components/socials/index.pug
 include ../../components/header/index.pug
 include ../../components/field/index.pug
+include ../../components/select/index.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -240,3 +241,49 @@ html(lang="en")
                 +field({placeholder: 'Имя и фамилия', error: false, value: ''})
                 +field({placeholder: 'Имя и фамилия', error: false, value: 'srgsrg'})
                 +field({placeholder: 'Имя и фамилия', error: true, value: 'Fgidjlfsxb'})
+
+            .style-guide__selects
+                .style-guide__select
+                    +select({
+                        current: 'Вакансия',
+                        options: [
+                            {
+                                value: 'Научный руководитель'
+                            },
+                            {
+                                value: 'Врач'
+                            },
+                            {
+                                value: 'Медсестра в лабораторию'
+                            },
+                            {
+                                value: 'Уборщица'
+                            },
+                            {
+                                value: 'Охранник'
+                            }
+                        ],
+                        expanded: false
+                    })
+                .style-guide__select
+                    +select({
+                        current: 'Вакансия',
+                        options: [
+                            {
+                                value: 'Научный руководитель'
+                            },
+                            {
+                                value: 'Врач'
+                            },
+                            {
+                                value: 'Медсестра в лабораторию'
+                            },
+                            {
+                                value: 'Уборщица'
+                            },
+                            {
+                                value: 'Охранник'
+                            }
+                        ],
+                        expanded: true
+                    })

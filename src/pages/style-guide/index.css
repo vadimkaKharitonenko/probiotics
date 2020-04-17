@@ -171,3 +171,15 @@
     margin-left: -5px;
     width: 70.4%;
 }
+
+.style-guide__selects {
+    display: grid;
+    width: 83.3%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 176px;
+    margin-left: 122px;
+}
+
+.style-guide__select {
+    width: 279px;
+}
