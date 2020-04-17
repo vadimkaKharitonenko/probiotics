@@ -6,6 +6,7 @@ include ../../components/main-hepatitis-a/index.pug
 include ../../components/main-advantages/index.pug
 include ../../components/main-expert/index.pug
 include ../../components/main-news/index.pug
+include ../../components/main-contacts/index.pug
 
 html(lang="ru")
   head
@@ -13,6 +14,7 @@ html(lang="ru")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title Вектор-БиАльгам
+    script(src="https://api-maps.yandex.ru/2.1/?apikey=98649c5f-f161-4db2-a5ed-ca666d41bbfa&lang=ru_RU" type="text/javascript")
   body
     main
       +main-indicator()
@@ -44,3 +46,4 @@ html(lang="ru")
       +main-advantages()
       +main-expert()
       +main-news()
+      +main-contacts()
