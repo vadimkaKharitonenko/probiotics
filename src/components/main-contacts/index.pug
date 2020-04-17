@@ -1,5 +1,5 @@
-mixin main-contacts()
-    section.main-contacts
+mixin main-contacts(className)
+    section(class=`main-contacts section ${className ? className : ''}`)
         .container.main-contacts__inner-contacts
             +heading({tag: 'h2', level: 1, className: 'main-contacts__title'})
                 | Контакты

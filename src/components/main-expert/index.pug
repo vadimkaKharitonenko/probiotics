@@ -1,8 +1,8 @@
 include ../heading/index.pug
 include ../hightlighted-text/index.pug
 
-mixin main-expert()
-    section.main-expert
+mixin main-expert(className)
+    section(class=`main-expert section ${className ? className : ''}`)
         .container.main-expert__inner-container
             +heading({tag: 'h2', level: 1, className: 'main-expert__title'})
                 | Слово эксперта

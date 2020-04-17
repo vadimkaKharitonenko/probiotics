@@ -1,5 +1,5 @@
-mixin main-hepatitis-a()
-    section.main-hepatitis-a 
+mixin main-hepatitis-a(className)
+    section(class=`main-hepatitis-a section ${className ? className : ''}`)
         .container.main-hepatitis-a__inner-container
             .main-hepatitis-a__label ЕДИНСТВЕННЫЕ В РОССИИ
             +heading({tag: 'h2', level: 1, className: 'main-hepatitis-a__title'})

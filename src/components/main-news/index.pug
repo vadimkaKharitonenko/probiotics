@@ -2,8 +2,8 @@ include ../heading/index.pug
 include ../arrow-button/index.pug
 include ../news-item/index.pug
 
-mixin main-news()
-    section.main-news
+mixin main-news(className)
+    section(class=`main-news section ${className ? className : ''}`)
         .main-news__inner-container
             .container
                 .main-news__header

@@ -2,8 +2,8 @@ include ../heading/index.pug
 include ../description-text/index.pug
 include ../button/index.pug
 
-mixin main-advantages()
-    section.main-advantages
+mixin main-advantages(className)
+    section(class=`main-advantages section ${className ? className : ''}`)
         .container.main-advantages__inner-container
             .advantage
                 .advantage__label ЕДИНСТВЕННЫЕ В РОССИИ

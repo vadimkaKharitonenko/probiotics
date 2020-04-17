@@ -1,8 +1,8 @@
 include ../heading/index.pug
 include ../button/index.pug
 
-mixin main-banner()
-    section.main-banner
+mixin main-banner(className)
+    section(class=`main-banner section ${className ? className : ''}`)
         .container.main-banner__inner-container
             span.main-banner__label Вектор-БиАльгам
             +heading({tag: 'h1', level: 1, className: 'main-banner__title'})
