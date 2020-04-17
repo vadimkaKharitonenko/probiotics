@@ -1,5 +1,5 @@
-mixin arrow-button({direction})
-    button.arrow-button
+mixin arrow-button({direction, className})
+    button(class=`arrow-button ${className ? className : ''}`)
         if (direction === 'left')
             img(src=require('../../assets/img/arrow-left.png'), alt="left")
         else
