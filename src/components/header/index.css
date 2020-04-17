@@ -1,5 +1,10 @@
 .header-container {
-    position: relative;
+    position: fixed;
+    top: 27px;
+    width: 1202px;
+    left: 50%;
+    margin-left: -601px;
+    z-index: 100;
 }
 
 .header {

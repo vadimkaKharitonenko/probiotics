@@ -27,7 +27,7 @@ a {
 
 .container {
   position: relative;
-  width: 1170px;
+  width: 1202px;
   margin: 0 auto;
 }
 
@@ -126,3 +126,9 @@ input[type=number] {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'HNR';
+	src: url('fonts/HelveticaNeue.ttf');
+	font-weight: normal;
+	font-style: normal;
+}

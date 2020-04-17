@@ -1,0 +1,13 @@
+include ../heading/index.pug
+include ../hightlighted-text/index.pug
+
+mixin main-expert()
+    section.main-expert
+        .container.main-expert__inner-container
+            +heading({tag: 'h2', level: 1, className: 'main-expert__title'})
+                | Слово эксперта
+            +hightlighted-text({className: 'main-expert__hightlighted-text'})
+                | «Вектор-БиАльгам» - одно из первых предприятий научного центра, которому удалось направить фундаментальные знания».
+            +heading({tag: 'h3', level: 3, className: 'main-expert__name'})
+                | Никулин Леонид Георгиевич
+            .main-expert__position генеральный директор

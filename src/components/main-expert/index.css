@@ -1,0 +1,44 @@
+.main-expert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/img/main-expert.png');
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+.main-expert__inner-container {
+    height: 478px;
+}
+
+.main-expert__title {
+    margin-left: 10px;
+    margin-bottom: 37px;
+}
+
+.main-expert__hightlighted-text {
+    width: 39%;
+    margin-left: 82px;
+    margin-bottom: 60px;
+}
+
+.main-expert__name.heading {
+    margin-left: 83px;
+    margin-bottom: 9px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main-expert__position {
+    margin-left: 85px;
+    color: #3c84cc;
+    font-family: 'UM', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}

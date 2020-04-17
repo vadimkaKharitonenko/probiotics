@@ -1,0 +1,24 @@
+.main-indicator {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 56%;
+    left: 4.7%;
+    margin-top: -94px;
+}
+
+.main-indicator__dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-indicator__dot:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+.main-indicator__dot.active {
+    background-color: #ffffff;
+}

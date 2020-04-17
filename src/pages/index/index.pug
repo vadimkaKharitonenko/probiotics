@@ -1,10 +1,44 @@
+include ../../components/header/index.pug
+include ../../components/main-banner/index.pug
+include ../../components/main-indicator/index.pug
+include ../../components/main-probiotics/index.pug
+include ../../components/main-hepatitis-a/index.pug
+include ../../components/main-advantages/index.pug
+include ../../components/main-expert/index.pug
+
 html(lang="ru")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Title
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Вектор-БиАльгам
   body
-    header
-    main test
-    footer
+    main
+      +main-indicator()
+      +header({menu: [
+        {
+          text: 'Пробиотики',
+          href: './',
+          active: true
+        },
+        {
+          text: 'Вакцина Гепатита А',
+          href: './',
+          active: false
+        },
+        {
+          text: 'Ингредиенты',
+          href: './',
+          active: false
+        },
+        {
+          text: 'Контрактное производство',
+          href: './',
+          active: false
+        }
+      ]})
+      +main-banner()
+      +main-probiotics()
+      +main-hepatitis-a()
+      +main-advantages()
+      +main-expert()

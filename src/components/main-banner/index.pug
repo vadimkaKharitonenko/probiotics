@@ -1,0 +1,11 @@
+include ../heading/index.pug
+include ../button/index.pug
+
+mixin main-banner()
+    section.main-banner
+        .container.main-banner__inner-container
+            span.main-banner__label Вектор-БиАльгам
+            +heading({tag: 'h1', level: 1, className: 'main-banner__title'})
+                | Когда наука служит людям
+            +button({theme: 'red', className: 'main-banner__btn'})
+                | О компании

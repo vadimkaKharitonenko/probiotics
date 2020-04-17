@@ -1,0 +1,59 @@
+.main-hepatitis-a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/img/main-hepatisis-a.png');
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+.main-hepatitis-a__inner-container {
+    height: 379px;
+    margin-bottom: 113px;
+}
+
+.main-hepatitis-a__label {
+    margin-top: 27px;
+    margin-bottom: 17px;
+    margin-left: 15px;
+    color: #81e8fc;
+    font-family: 'UB', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.main-hepatitis-a__title.heading {
+    width: 426px;
+    margin-left: 9px;
+    margin-bottom: 24px;
+    font-size: 82px;
+    color: #ffffff;
+    line-height: 85px;
+}
+
+.main-hepatitis-a__description {
+    width: 330px;
+    margin-left: 85px;
+    margin-bottom: 40px;
+    opacity: 0.7;
+    color: #ffffff;
+    font-family: 'HNR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.main-hepatitis-a__btn.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 45px;
+    margin-left: 84px;
+    padding: 0;
+}
