@@ -1,0 +1,25 @@
+.certificate {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate__img {
+    width: max-content;
+    margin-bottom: 29px;
+}
+
+.certificate__title {
+    margin-bottom: 14px;
+    color: #2c343c;
+    font-family: 'UM', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.certificate__date {
+    color: #c0d0dc;
+    font-family: 'UM', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
