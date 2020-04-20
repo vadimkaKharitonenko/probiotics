@@ -2,12 +2,12 @@
 import './index.css';
 
 $(function () {
-  if (document.querySelector('#contactsMap')) {
+  if (document.querySelector('#map')) {
     ymaps.ready(init);
   }
 
   function init() {
-    const contactsMap = new ymaps.Map('contactsMap', {
+    const map = new ymaps.Map('map', {
       center: [55.76, 37.64],
       zoom: 10
     });
@@ -19,6 +19,6 @@ $(function () {
       iconImageOffset: [-3, -42]
     });
 
-    contactsMap.geoObjects.add(placemark);
+    map.geoObjects.add(placemark);
   }
 });

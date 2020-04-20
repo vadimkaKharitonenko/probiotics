@@ -1,9 +1,12 @@
-mixin socials()
-    .socials
-        a(href="./").socials__link
-            img(src=require('../../assets/img/vk.png'), alt="vk")
-        a(href="./").socials__link
-            img(src=require('../../assets/img/fb.png'), alt="fb")
-        a(href="./").socials__link
-            img(src=require('../../assets/img/insta.png'), alt="insta")
-            
+mixin socials(className)
+  div(class=`socials ${className ? className : ''}`)
+    a(href="./").socials__link
+      img(src=require('../../assets/img/vk-blue.svg'), alt="vk")
+      img(src=require('../../assets/img/vk.png'), alt="vk")
+    a(href="./").socials__link
+      img(src=require('../../assets/img/fb-blue.svg'), alt="fb")
+      img(src=require('../../assets/img/fb.png'), alt="fb")
+    a(href="./").socials__link
+      img(src=require('../../assets/img/insta-blue.svg'), alt="insta")
+      img(src=require('../../assets/img/insta.png'), alt="insta")
+

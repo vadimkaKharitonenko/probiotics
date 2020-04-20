@@ -1,0 +1,36 @@
+.page-404 {
+    display: block;
+    min-height: calc(100vh - 130px);
+    background-color: #0442bc;
+    background-image: url('../../assets/img/404.png');
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: 51% 38%;
+}
+
+.page-404__title {
+    width: max-content;
+    margin: 0 auto;
+    padding-top: 586px;
+    color: #ffffff;
+    font-family: 'UM', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 66px;
+}
+
+.page-404__description {
+    width: max-content;
+    margin: 31px auto 0;
+    font-family: 'UM', sans-serif;
+    color: #b0bfde;
+    text-align: center;
+}
+
+.page-404__description a {
+    color: #e21c2a;
+}
+
+.page-404__content {
+    margin-left: 20px;
+}

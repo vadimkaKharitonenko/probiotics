@@ -1,0 +1,42 @@
+include ../../components/header/index.pug
+include ../../components/description-text/index.pug
+include ../../components/footer/index.pug
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title 404
+  body
+    main.page-404
+      +header({menu: [
+        {
+          text: 'Пробиотики',
+          href: './',
+          active: true
+        },
+        {
+          text: 'Вакцина Гепатита А',
+          href: './',
+          active: false
+        },
+        {
+          text: 'Ингредиенты',
+          href: './',
+          active: false
+        },
+        {
+          text: 'Контрактное производство',
+          href: './',
+          active: false
+        }
+      ]})
+      .page-404__content
+        h1.page-404__title Страница не найдена
+        +description-text({className: 'page-404__description'})
+          | К сожалению такой страницы не существует, возможно, 
+          br
+          | вы ошиблись адресом, попробуйте начать с 
+          a(href='/') главной страницы
+    +footer()

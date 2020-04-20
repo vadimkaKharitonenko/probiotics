@@ -1,0 +1,11 @@
+include ../description-text/index.pug
+include ../button/index.pug
+
+mixin question()
+  section.question
+    h2.question__title Задайте свой вопрос 
+    .question__content
+      +description-text({className: 'question__description'})
+        | Изготавливаем брендированные ампулы, флаконы и шприцы с вашим лекарством по контракту
+      +button({theme: 'red', className: 'question__submit'})
+        | Задать

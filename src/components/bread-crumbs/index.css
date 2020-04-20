@@ -1,0 +1,15 @@
+.bread-crumbs {
+  color: #f2f6f9;
+  font-family: 'UR', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.bread-crumbs a:last-child {
+  color: #4585d8;
+}
+
+.bread-crumbs a:not(:last-child)::after {
+  content: ' | ';
+  margin: 0 5px;
+}

@@ -4,6 +4,22 @@
     grid-column-gap: 6px;
 }
 
+.socials .socials__link img:first-child {
+    display: none;
+}
+
+.socials .socials__link img:last-child {
+    display: block;
+}
+
+.socials.-theme-blue .socials__link img:first-child {
+    display: block;
+}
+
+.socials.-theme-blue .socials__link img:last-child {
+    display: none;
+}
+
 .socials__link {
     display: flex;
     justify-content: center;

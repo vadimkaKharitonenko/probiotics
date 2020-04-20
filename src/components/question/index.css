@@ -1,0 +1,35 @@
+.question {
+    width: 1170px;
+    height: 296px;
+    margin: 0 auto 72px;
+    background-image: url('../../assets/img/question-bg.png');
+    background-size: cover;
+}
+
+.question__title {
+    padding: 56px 0 29px 197px;
+    color: #ffffff;
+    font-family: 'UM', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 66px;
+}
+
+.question__content {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 316px;
+}
+
+.question__description {
+    width: 321px;
+    margin-right: 229px;
+    color: rgba(255,255,255,.7);
+}
+
+.question__submit.button {
+    width: 107px;
+    height: 45px;
+    margin-top: 7px;
+    padding: 0;
+}

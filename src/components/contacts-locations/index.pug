@@ -1,0 +1,38 @@
+include ../heading/index.pug
+include ../description-text/index.pug
+include ../socials/index.pug
+include ../link/index.pug
+
+mixin contacts-locations()
+  section.contacts-locations
+    .contacts-locations__block
+      img(src= require('../../assets/img/contacts-location-icon.svg'), alt="Location").contacts-location__icon
+      +heading({tag: 'h2', level: 4, className: 'contacts-location__title'})
+        | Юридический адрес
+      +description-text({className: 'contacts-location__description'})
+        | АО "Вектор-БиАльгам" Российская Федерация, 630559, Новосибирская область, р.п. Кольцово, Научно-производственная зона, корпус 104
+
+      +heading({tag: 'h2', level: 4, className: 'contacts-location__title'})
+        | Телефон
+      +link({href: 'tel: +7 (383) 336-51-51'})
+        span.phone +7 (383) 336-51-51
+
+    .contacts-locations__block
+      img(src= require('../../assets/img/contacts-location-2-icon.svg'), alt="Location").contacts-location__icon
+      +heading({tag: 'h2', level: 4, className: 'contacts-location__title'})
+        | Адрес производства
+      +description-text({className: 'contacts-location__description'})
+        | АО "Вектор-БиАльгам" Российская Федерация, Новосибирская область, р.п. Кольцово, 
+        br
+        | ул. Центральная, 13А
+    
+      +heading({tag: 'h2', level: 4, className: 'contacts-location__title'})
+        | Телефон
+      +link({href: 'tel: +7 (383) 336-75-50'})
+        span.phone +7 (383) 336-75-50
+      
+    .contacts-locations__block
+      img(src= require('../../assets/img/contacts-location-3-icon.svg'), alt="Location").contacts-location__icon
+      +heading({tag: 'h2', level: 4, className: 'contacts-location__title'})
+        | Соцсети
+      +socials('-theme-blue')

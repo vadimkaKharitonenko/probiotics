@@ -1,0 +1,4 @@
+mixin bread-crumbs({items})
+    nav.bread-crumbs.container
+        each item in items
+            a(href= item.link)= item.text
