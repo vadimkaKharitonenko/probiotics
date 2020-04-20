@@ -1,0 +1,12 @@
+include ../arrow-button/index.pug
+
+mixin photo-slider(items)
+  section.photo-slider
+    .js-photo-slider
+      each slide in items
+        .slide
+          img(src= slide.img, alt="Slide").slide__img
+          p.slide__description= slide.text
+    .photo-slider__controls
+      +arrow-button({direction: 'left', className: 'js-photo-slider-prev'})
+      +arrow-button({direction: 'right', className: 'js-photo-slider-next'})

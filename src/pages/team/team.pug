@@ -13,82 +13,82 @@ html(lang="ru")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Команда
   body
-    main
-      +header({menu: [
+    +header({menu: [
+      {
+        text: 'Пробиотики',
+        href: './',
+        active: true
+      },
+      {
+        text: 'Вакцина Гепатита А',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Ингредиенты',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Контрактное производство',
+        href: './',
+        active: false
+      }
+    ]})
+    +top-banner({
+      img: require('../../assets/img/team-bg.png'), 
+      items: [
         {
-          text: 'Пробиотики',
-          href: './',
+          text: 'Главная',
+          link: './'
+        },
+        {
+          text: 'О компании',
+          link: './about.html'
+        },
+        {
+          text: 'Команда',
+          link: './team.html'
+        }
+      ],
+      title: 'О компании',
+      menu: [
+        {
+          text: 'КОМПАНИЯ СЕГОДНЯ',
+          link: './'
+        },
+        {
+          text: 'ИСТОРИЯ',
+          link: './'
+        },
+        {
+          text: 'команда',
+          link: './',
           active: true
         },
         {
-          text: 'Вакцина Гепатита А',
-          href: './',
-          active: false
+          text: 'достижения',
+          link: './'
         },
         {
-          text: 'Ингредиенты',
-          href: './',
-          active: false
+          text: 'партнеры',
+          link: './'
         },
         {
-          text: 'Контрактное производство',
-          href: './',
-          active: false
+          text: 'Научно-производственный потенциал компании',
+          link: './'
+        },
+        {
+          text: 'социальная ответственность',
+          link: './'
+        },
+        {
+          text: 'Работа в наукограде Кольцово',
+          link: './'
         }
-      ]})
-      +top-banner({
-        img: require('../../assets/img/team-bg.png'), 
-        items: [
-          {
-            text: 'Главная',
-            link: './'
-          },
-          {
-            text: 'О компании',
-            link: './about.html'
-          },
-          {
-            text: 'Команда',
-            link: './team.html'
-          }
-        ],
-        title: 'О компании',
-        menu: [
-          {
-            text: 'КОМПАНИЯ СЕГОДНЯ',
-            link: './'
-          },
-          {
-            text: 'ИСТОРИЯ',
-            link: './'
-          },
-          {
-            text: 'команда',
-            link: './',
-            active: true
-          },
-          {
-            text: 'достижения',
-            link: './'
-          },
-          {
-            text: 'партнеры',
-            link: './'
-          },
-          {
-            text: 'Научно-производственный потенциал компании',
-            link: './'
-          },
-          {
-            text: 'социальная ответственность',
-            link: './'
-          },
-          {
-            text: 'Работа в наукограде Кольцово',
-            link: './'
-          }
-        ]
-      })
+      ]
+    })
+    main
       .container
         +heading({tag: 'h1', className: 'team__title', level: 2})
           | Команда
@@ -168,4 +168,4 @@ html(lang="ru")
                 ])
         
         +question()
-      +footer()
+    +footer()

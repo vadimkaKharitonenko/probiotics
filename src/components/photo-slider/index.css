@@ -1,0 +1,31 @@
+.photo-slider {
+    position: relative;
+}
+
+.photo-slider .slide__img {
+    width: 800px;
+    height: 529px;
+    object-fit: cover;
+}
+
+.photo-slider .slide__description {
+    width: 800px;
+    height: 114px;
+    padding: 45px 0 54px 131px;
+    background-color: #f2f6fa;
+    color: #70797d;
+    font-family: 'UR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.photo-slider__controls {
+    position: absolute;
+    bottom: 36px;
+    right: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 108px;
+    background-color: #f2f6fa;
+}

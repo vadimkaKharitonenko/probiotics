@@ -1,0 +1,127 @@
+include ../../components/header/index.pug
+include ../../components/top-banner/index.pug
+include ../../components/label/index.pug
+include ../../components/heading/index.pug
+include ../../components/description-text/index.pug
+include ../../components/photo-slider/index.pug
+include ../../components/arrow-button/index.pug
+include ../../components/question/index.pug
+include ../../components/footer/index.pug
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Медиа
+  body
+    +header({menu: [
+      {
+        text: 'Пробиотики',
+        href: './',
+        active: true
+      },
+      {
+        text: 'Вакцина Гепатита А',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Ингредиенты',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Контрактное производство',
+        href: './',
+        active: false
+      }
+    ]})
+    +top-banner({
+      img: require('../../assets/img/team-bg.png'), 
+      items: [
+        {
+          text: 'Главная',
+          link: './'
+        },
+        {
+          text: 'Медиа',
+          link: './media.html'
+        },
+        {
+          text: 'Новости компании',
+          link: './news.html'
+        },
+        {
+          text: 'Статья',
+          link: './article.html'
+        },
+      ],
+      title: 'Медиа',
+      menu: [
+        {
+          text: 'Новости компании',
+          link: './'
+        },
+        {
+          text: 'Специалистам',
+          link: './'
+        },
+        {
+          text: 'Потребителю',
+          link: './',
+        },
+        {
+          text: 'Фото и Видео',
+          link: './'
+        },
+      ]
+    })
+    main
+      .container-sm.media__content
+        .media__header
+          +label({theme: 'blue'})
+            | Новости
+          .media__date 16.09.2019
+        +heading({tag: 'h2', className: 'media__title', level: 2})
+          | АО «Вектор-БиАльгам» продолжает вызывать интерес к своей продукции у зарубежных партнеров.
+
+        .media__description
+          +description-text({className: ''})
+            | Кольцовская научно-технологическая компания Вектор-БиАльгам продолжает вызывать интерес к своей продукции у зарубежных партнеров. С целью развития двустороннего сотрудничества между Вектор-БиАльгам и зарубежными партнерами кольцовская компания активно участвует в международных бизнес-миссиях и выставках.
+
+          +description-text({className: ''})
+            | В рамках бизнес-миссии проходившей в городе Сеуле с 16 по 20 октября 2019 года, представители компании провели встречи с потенциальными партнерами в сфере биотехнологий и биофармацевтики, а также обсудили перспективы сотрудничества с корейскими предпринимателями.
+
+          +description-text({className: ''})
+            | Поездка в Сеул стала следующим шагом на пути к сотрудничеству между сибирскими биотехнологиями и корейским бизнес-сообществом.
+    
+        +photo-slider([
+          {
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Переговоры с корейскими предпринимателями 1'
+          },
+          {
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Переговоры с корейскими предпринимателями 2'
+          },
+          {
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Переговоры с корейскими предпринимателями 3'
+          },
+        ])
+
+        .media__description
+          +description-text({className: ''})
+            | Кольцовская научно-технологическая компания Вектор-БиАльгам продолжает вызывать интерес к своей продукции у зарубежных партнеров. С целью развития двустороннего сотрудничества между Вектор-БиАльгам и зарубежными партнерами кольцовская компания активно участвует в международных бизнес-миссиях и выставках.
+
+          +description-text({className: ''})
+            | В рамках бизнес-миссии проходившей в городе Сеуле с 16 по 20 октября 2019 года, представители компании провели встречи с потенциальными партнерами в сфере биотехнологий и биофармацевтики, а также обсудили перспективы сотрудничества с корейскими предпринимателями.
+
+        a(href='./').media__back
+          +arrow-button({className: '', direction: 'left'})
+          span НАЗАД К СПИСКУ
+
+      +question()
+
+    +footer()

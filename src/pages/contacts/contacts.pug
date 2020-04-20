@@ -12,47 +12,47 @@ html(lang="ru")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Контакты
   body
-    main
-      +header({menu: [
+    +header({menu: [
+      {
+        text: 'Пробиотики',
+        href: './',
+        active: true
+      },
+      {
+        text: 'Вакцина Гепатита А',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Ингредиенты',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Контрактное производство',
+        href: './',
+        active: false
+      }
+    ]})
+    +top-banner({
+      img: require('../../assets/img/top-banner-contacts.png'), 
+      items: [
         {
-          text: 'Пробиотики',
-          href: './',
-          active: true
+          text: 'Главная',
+          link: './'
         },
         {
-          text: 'Вакцина Гепатита А',
-          href: './',
-          active: false
-        },
-        {
-          text: 'Ингредиенты',
-          href: './',
-          active: false
-        },
-        {
-          text: 'Контрактное производство',
-          href: './',
-          active: false
+          text: 'Контакты',
+          link: './contacts.html'
         }
-      ]})
-      +top-banner({
-        img: require('../../assets/img/top-banner-contacts.png'), 
-        items: [
-          {
-            text: 'Главная',
-            link: './'
-          },
-          {
-            text: 'Контакты',
-            link: './contacts.html'
-          }
-        ],
-        title: 'Контакты',
-        menu: []
-      })
+      ],
+      title: 'Контакты',
+      menu: []
+    })
+    main
       .container
         +contacts-locations()
         +map()
         +question()
-      +footer()
+    +footer()
     script(src='https://api-maps.yandex.ru/2.1/?apikey=98649c5f-f161-4db2-a5ed-ca666d41bbfa&lang=ru_RU' type='text/javascript' defer='')

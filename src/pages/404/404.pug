@@ -9,29 +9,29 @@ html(lang="ru")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title 404
   body
+    +header({menu: [
+      {
+        text: 'Пробиотики',
+        href: './',
+        active: true
+      },
+      {
+        text: 'Вакцина Гепатита А',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Ингредиенты',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Контрактное производство',
+        href: './',
+        active: false
+      }
+    ]})
     main.page-404
-      +header({menu: [
-        {
-          text: 'Пробиотики',
-          href: './',
-          active: true
-        },
-        {
-          text: 'Вакцина Гепатита А',
-          href: './',
-          active: false
-        },
-        {
-          text: 'Ингредиенты',
-          href: './',
-          active: false
-        },
-        {
-          text: 'Контрактное производство',
-          href: './',
-          active: false
-        }
-      ]})
       .page-404__content
         h1.page-404__title Страница не найдена
         +description-text({className: 'page-404__description'})

@@ -16,38 +16,38 @@ html(lang='ru')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
     title Вектор-БиАльгам
   body
+    +main-indicator()
+    +header({menu: [
+      {
+        text: 'Пробиотики',
+        href: './',
+        active: true
+      },
+      {
+        text: 'Вакцина Гепатита А',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Ингредиенты',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Контрактное производство',
+        href: './',
+        active: false
+      }
+    ]})
     main
-      +main-indicator()
-      +header({menu: [
-        {
-          text: 'Пробиотики',
-          href: './',
-          active: true
-        },
-        {
-          text: 'Вакцина Гепатита А',
-          href: './',
-          active: false
-        },
-        {
-          text: 'Ингредиенты',
-          href: './',
-          active: false
-        },
-        {
-          text: 'Контрактное производство',
-          href: './',
-          active: false
-        }
-      ]})
-      #main-sections
-        +main-banner()
-        +main-probiotics()
-        +main-hepatitis-a()
-        +main-advantages()
-        +main-expert()
-        +main-news()
-        +main-contacts()
-        +footer()
+    #main-sections
+      +main-banner()
+      +main-probiotics()
+      +main-hepatitis-a()
+      +main-advantages()
+      +main-expert()
+      +main-news()
+      +main-contacts()
+      +footer()
     script(src='https://api-maps.yandex.ru/2.1/?apikey=98649c5f-f161-4db2-a5ed-ca666d41bbfa&lang=ru_RU' type='text/javascript' defer='')
     
