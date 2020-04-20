@@ -1,8 +1,11 @@
 include ../bread-crumbs/index.pug
 
-mixin top-banner({img, items, title})
-    section.top-banner
-        img(src= img, alt="Banner").top-banner__img
-        .top-banner__content
-            +bread-crumbs({items})
-            .top-banner__title= title
+mixin top-banner({img, items, title, menu})
+  section.top-banner
+    img(src= img, alt="Banner").top-banner__img
+    .top-banner__content
+      +bread-crumbs({items})
+      .top-banner__title= title
+    .top-banner__menu
+      each item in menu
+        a(href= item.link class=`${item.active ? 'active' : ''}`)= item.text

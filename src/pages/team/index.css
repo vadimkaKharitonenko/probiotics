@@ -1,0 +1,22 @@
+.team__title {
+    margin: 79px 192px 39px;
+}
+
+.teammates {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.teammates .column {
+    width: 370px;
+}
+
+.teammates .column .teammate:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.teammates__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 109px;
+}

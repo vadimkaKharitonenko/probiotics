@@ -1,5 +1,8 @@
 .top-banner {
   position: relative;   
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
   height: 382px;            
 }
 
@@ -28,4 +31,29 @@
   font-size: 82px;
   font-weight: 500;
   line-height: 82px;
+}
+
+.top-banner__menu {
+  position: relative;
+  z-index: 2;
+  width: 87%;
+  margin: auto auto 0 13%;
+  white-space: nowrap;
+  color: #ffffff;
+  font-family: 'UM', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  overflow-x: auto;
+}
+
+
+.top-banner__menu a {
+  padding: 17px 15px;
+}
+
+.top-banner__menu a.active {
+  background-color: #0653eb;
 }

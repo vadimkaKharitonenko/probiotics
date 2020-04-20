@@ -1,0 +1,30 @@
+include ../hightlighted-text/index.pug
+include ../description-text/index.pug
+
+mixin teammate(type, img, name, position, hightlighted, description)
+  if (type === 'big')
+    article(class=`teammate ${type ? type : ''}`)
+      .teammate__content
+        +hightlighted-text({className: ''})
+          span= hightlighted
+        +description-text({className: 'teammate__description'})
+          each text in description
+            span= text
+
+        .teammate__name= name
+        .teammate__position= position
+
+      img(src= img, alt="Teammate").teammate__img
+  else
+    article(class=`teammate`)
+      img(src= img, alt="Teammate").teammate__img
+      .teammate__name= name
+      .teammate__position= position
+      .teammate__content
+        if hightlighted
+          +hightlighted-text({className: ''})
+            span= hightlighted
+        if description
+          +description-text({className: 'teammate__description'})
+            each text in description
+              span= text
