@@ -1,0 +1,21 @@
+.media-item__img {
+    width: 370px;
+    height: 231px;
+    object-fit: cover;
+}
+
+.media-item__date {
+    display: block;
+    padding: 22px 42px 0;
+    color: #c0d0dc;
+    font-family: 'UM', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.media-item__title.heading {
+    width: 100%;
+    padding: 17px 42px;
+    font-family: 'UM', sans-serif;
+    line-height: 24px;
+}
