@@ -1,0 +1,8 @@
+include ../partner-logo/index.pug
+include ../description-text/index.pug
+
+mixin partner-item(text)
+  article.partner-item
+    +partner-logo({img: require('../../assets/img/partner-logo.png')})
+    +description-text({className: 'partner-item__description'})
+      span= text

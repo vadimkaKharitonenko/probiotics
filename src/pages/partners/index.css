@@ -1,0 +1,13 @@
+.partners__title {
+    margin: 79px 0 47px;
+}
+
+.partners__subtitle.heading {
+    margin-bottom: 57px;
+    line-height: unset;
+}
+
+.partners__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
