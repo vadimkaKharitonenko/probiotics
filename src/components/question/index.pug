@@ -1,5 +1,7 @@
 include ../description-text/index.pug
+include ../heading/index.pug
 include ../button/index.pug
+include ../field/index.pug
 
 mixin question()
   section.question
@@ -7,5 +9,34 @@ mixin question()
     .question__content
       +description-text({className: 'question__description'})
         | Изготавливаем брендированные ампулы, флаконы и шприцы с вашим лекарством по контракту
-      +button({theme: 'red', className: 'question__submit'})
+      +button({theme: 'red', className: 'question__submit js-question-submit'})
         | Задать
+    .question__popup-container.js-question-popup-container.hidden
+      .question__popup
+        .question__popup-close.js-question-popup-close
+          img(src= require('../../assets/img/close.png'), alt="Close")
+        +heading({className: 'question__popup-title', tag: 'h3', level: 3})
+          | Задайте свой вопрос
+        .question__popup-fields
+          +field({placeholder: 'Имя и фамилия', error: false, value: ''})
+          +field({placeholder: 'Город', error: false, value: ''})
+          +field({placeholder: 'Компания', error: false, value: ''})
+          +field({placeholder: 'Телефон', error: false, value: ''})
+          +field({placeholder: 'E-mail', error: false, value: ''})
+          textarea(placeholder='Ваше сообщение').textarea
+        .question__popup-controls
+          +button({theme: 'blue', className: 'js-question-popup-submit'})
+            | Отправить
+          label.question__popup-agreement
+            input(type='checkbox' checked)
+            .mark
+              img(src= require('../../assets/img/checked.png'), alt="Checked")
+            p Даю согласие на обработку персональных данных, ознакомлен с пользовательским соглашением
+    .question__popup-container.js-question-popup-success.hidden
+      .question__popup.is-success
+        .question__popup-close.js-question-popup-close
+          img(src= require('../../assets/img/close.png'), alt="Close")
+        img(src= require('../../assets/img/success-btn.png'), alt="").question__popup-success-icon
+        h2.success__title Ваше сообщение успешно отправленно
+        p.success__description Мы свяжемся с вами в ближайшее время.
+        
