@@ -1,0 +1,10 @@
+include ../plus-button/index.pug
+
+mixin accordion(items)
+  section.accordion
+    each item in items
+      div(class=`accordion-item ${item.expanded ? 'expanded' : ''}`)
+        .accordion-item__header.js-accordion-item
+          .accordion-item__title= item.title
+          +plus-button({active: !item.expanded})
+        .accordion-item__description= item.text

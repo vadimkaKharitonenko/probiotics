@@ -1,0 +1,38 @@
+.accordion {
+
+}
+
+.accordion .accordion-item:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.accordion-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 19px 12px 30px;
+  background-color: #f2f6fa;
+}
+
+.accordion-item__title {
+  color: #2e3337;
+  font-family: 'UR', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: unset;
+}
+
+.accordion-item__description {
+  display: none;
+  padding: 15px 61px 41px 132px;
+  color: #70797d;
+  font-family: 'UR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  background-color: #f2f6fa;
+}
+
+.accordion-item.expanded .accordion-item__description {
+  display: block;
+}

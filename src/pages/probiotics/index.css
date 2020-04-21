@@ -1,0 +1,126 @@
+.probiotics__title {
+  margin: 75px 0 35px;
+}
+
+.probiotics strong {
+  display: block;
+  margin-bottom: 46px;
+  color: #24313a;
+  font-family: 'UR', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.probiotics .list {
+  width: 583px;
+  margin-left: auto;
+}
+
+.probiotics .list__title {
+  margin-bottom: 23px;
+  color: #0e7dd5;
+  font-family: 'UR', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: unset;
+}
+
+.probiotics .list__items {
+  margin-bottom: 46px;
+  color: #24313a;
+  font-family: 'UR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.probiotics .list__items li {
+  position: relative;
+  padding-left: 21px;
+}
+
+.probiotics .list__items li::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 8px;
+  height: 1px;
+  background-color: #0e7dd5;
+}
+
+.probiotics p {
+  margin-bottom: 69px;
+  color: #24313a;
+  font-family: 'UR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.probiotics h3 {
+  margin-bottom: 33px;
+  color: #24313a;
+  font-family: 'UM', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: unset;
+}
+
+.probiotics .slide__description {
+  margin-bottom: 0;
+}
+
+.probiotics .photo-slider {
+  margin-bottom: 44px;
+}
+
+.probiotics blockquote {
+  width: 577px;
+  margin: 0 auto 72px;
+  padding-left: 40px;
+  color: #26333c;
+  font-family: 'ULI', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  border-left: 1px solid #0e7dd5;
+}
+
+.probiotics .accordion {
+  margin-bottom: 59px;
+}
+
+.probiotics__documents {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-column-gap: 45px;
+  grid-row-gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 90px;
+}
+
+.probiotics .document-link {
+  display: flex;
+  align-items: flex-start;
+  max-width: 258px;
+}
+
+.probiotics .document-link .link {
+  line-height: unset;
+}
+
+.probiotics .document-link svg {
+  min-width: 13px;
+  height: 18px;
+  margin-right: 18px;
+}
+
+.probiotics__partners {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  margin-bottom: 82px;
+}

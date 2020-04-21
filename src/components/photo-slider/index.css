@@ -9,9 +9,11 @@
 }
 
 .photo-slider .slide__description {
+    display: flex;
+    align-items: center;
     width: 800px;
     height: 114px;
-    padding: 45px 0 54px 131px;
+    padding: 0 222px 0 69px;
     background-color: #f2f6fa;
     color: #70797d;
     font-family: 'UR', sans-serif;
