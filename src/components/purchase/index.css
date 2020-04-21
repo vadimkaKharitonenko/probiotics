@@ -1,0 +1,29 @@
+.purchase {
+
+}
+
+.purchase__title {
+  margin-bottom: 12px;
+  color: #2c343c;
+  font-family: 'UM', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.purchase__date {
+  display: block;
+  margin-bottom: 24px;
+  color: #0e7dd5;
+  font-family: 'UM', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.purchase__description {
+  color: #6b747b;
+  font-family: 'UR', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}

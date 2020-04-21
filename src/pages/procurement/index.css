@@ -1,0 +1,57 @@
+.procurement {
+  width: 770px;
+  margin: 0 auto;
+}
+
+.procurement__title {
+  margin: 78px 0 52px;
+}
+
+.procurement__link {
+  display: flex;
+  align-items: center;
+}
+
+.procurement__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+  padding: 34px 77px 44px 63px;
+  background-color: #f2f6fa;
+}
+
+.procurement__info .link {
+  margin-left: 18px;
+  line-height: unset;
+}
+
+.procurement__email {
+  color: #70797d;
+  font-family: 'UR', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.procurement__email a {
+  font-family: 'UM', sans-serif;
+  color: #0e7dd5;
+}
+
+.procurement__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 54px;
+  margin-bottom: 54px;
+}
+
+.procurement__more .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 45px;
+  margin-left: auto;
+  margin-bottom: 80px;
+  padding: 0;
+}
