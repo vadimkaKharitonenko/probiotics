@@ -31,11 +31,14 @@
     align-items: center;
     margin-right: 18px;
     margin-bottom: 10px;
-    opacity: 0.35;
     color: #ffffff;
     font-family: 'UR', sans-serif;
     font-size: 14px;
     font-weight: 400;
+}
+
+.footer .developer span {
+    opacity: 0.35;
 }
 
 .footer .developer svg {

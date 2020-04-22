@@ -1,0 +1,8 @@
+mixin review({img, name='', position='', title='', description=''})
+  article.review 
+    img(src= img, alt="Reviewer").review__img
+    .review__content
+      .review__name= name
+      .review__position= position
+      .review__title= title
+      span.review__description= description
