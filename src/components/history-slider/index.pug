@@ -2,14 +2,14 @@
 
 mixin history-slider(items)
   section.history-slider
-    .history-slider__years
+    .history-slider__years.js-history-slider-years
       each slide, i in items
         if i == active
-          button.year.active.js-history-year= slide.year
+          button(data-slide= slide data-index= i).year.active.js-history-year= slide.year
         else
-          button.year.js-history-year= slide.year
-      
+          button(data-slide= slide data-index= i).year.js-history-year= slide.year
+      .year-padding
     .history-slider__content.container-sm
-      img(src= items[active].img, alt="Photo").history-slider__photo
-      p.history-slider__description= items[active].text
-      p.history-slider__description-slide= items[active].description
+      img(src= items[active].img, alt="Photo").history-slider__photo.js-history-slider-photo
+      p.history-slider__description.js-history-slider-text= items[active].text
+      p.history-slider__description-slide.js-history-slider-description= items[active].description

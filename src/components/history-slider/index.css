@@ -2,11 +2,34 @@
   margin-bottom: 77px;
 }
 
+.history-slider__content {
+  padding-top: 180px;
+}
+
 .history-slider__years {
+  position: absolute;
+  left: 0;
+  z-index: 2;
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 15px;
-  margin: 0 70px 80px;
+  width: 100%;
+  height: 110px;
+  margin: 0 0 80px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+}
+
+.history-slider__years::-webkit-scrollbar {
+  display: none;
+}
+
+.history-slider__years .year:first-child {
+  margin-left: 577px;
+}
+
+.history-slider__years .year-padding {
+  width: 1200px;
 }
 
 .history-slider__years .year {

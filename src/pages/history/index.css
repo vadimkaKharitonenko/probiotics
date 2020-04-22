@@ -1,3 +1,7 @@
 .history__title {
   margin: 79px 0 72px;
 }
+
+.history-page {
+  overflow-x: hidden;
+}
