@@ -1,0 +1,220 @@
+include ../../components/header/index.pug
+include ../../components/top-banner/index.pug
+include ../../components/heading/index.pug
+include ../../components/history-slider/index.pug
+include ../../components/question/index.pug
+include ../../components/footer/index.pug
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title История
+  body
+    +header({menu: [
+      {
+        text: 'Пробиотики',
+        href: './',
+        active: true
+      },
+      {
+        text: 'Вакцина Гепатита А',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Ингредиенты',
+        href: './',
+        active: false
+      },
+      {
+        text: 'Контрактное производство',
+        href: './',
+        active: false
+      }
+    ]})
+    +top-banner({
+      img: require('../../assets/img/reviews-top-bg.png'), 
+      items: [
+        {
+          text: 'Главная',
+          link: './'
+        },
+        {
+          text: 'О компании',
+          link: './'
+        },
+        {
+          text: 'История',
+          link: './'
+        },
+      ],
+      title: 'О компании',
+      menu: [
+        {
+          text: 'КОМПАНИЯ СЕГОДНЯ',
+          link: './'
+        },
+        {
+          text: 'ИСТОРИЯ',
+          link: './',
+          active: true
+        },
+        {
+          text: 'команда',
+          link: './',
+        },
+        {
+          text: 'достижения',
+          link: './'
+        },
+        {
+          text: 'партнеры',
+          link: './'
+        },
+        {
+          text: 'Научно-производственный потенциал компании',
+          link: './'
+        },
+        {
+          text: 'социальная ответственность',
+          link: './'
+        },
+        {
+          text: 'Работа в наукограде Кольцово',
+          link: './'
+        }
+      ]
+    })
+    main
+      .container-sm
+        +heading({tag: 'h2', className: 'history__title', level: 2})
+          | История
+
+      .container
+        +history-slider([
+          {
+            year: 2019,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 1',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2018,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 2',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2017,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 3',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2016,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 4',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2015,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 5',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2014,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 6',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2013,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 7',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2012,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 8',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2011,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии.',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2010,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 9',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2009,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 10',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2008,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 11',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2007,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 12',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2006,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 13',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2005,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 14',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2004,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 15',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2003,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 16',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2002,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 17',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2001,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 18',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+          {
+            year: 2000,
+            img: require('../../assets/img/photo-slider-1.png'),
+            text: 'Описание к фотографии. 19',
+            description: 'Запущена новая производственная линия на участке розлива инъекционных препаратов общей мощностью 22 млн. доз.'
+          },
+        ])
+
+    +question()
+    +footer()
