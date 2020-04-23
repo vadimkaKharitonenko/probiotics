@@ -5,6 +5,7 @@
   width: 370px;
   margin: 0 auto;
   background-color: #f2f6fa;
+  cursor: pointer;
 }
 
 .teammate.big {

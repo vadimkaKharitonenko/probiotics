@@ -1,9 +1,9 @@
 include ../hightlighted-text/index.pug
 include ../description-text/index.pug
 
-mixin teammate(type, img, name, position, hightlighted, description)
+mixin teammate(type, img, name, position, hightlighted, description, detail)
   if (type === 'big')
-    article(class=`teammate ${type ? type : ''}`)
+    article(class=`teammate js-teammate ${type ? type : ''}` data-detail= detail)
       .teammate__content
         +hightlighted-text({className: ''})
           span= hightlighted
@@ -16,7 +16,7 @@ mixin teammate(type, img, name, position, hightlighted, description)
 
       img(src= img, alt="Teammate").teammate__img
   else
-    article(class=`teammate`)
+    article(class=`teammate js-teammate` data-detail= detail)
       img(src= img, alt="Teammate").teammate__img
       .teammate__name= name
       .teammate__position= position
