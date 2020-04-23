@@ -1,0 +1,56 @@
+.vacancies__title.heading {
+  margin: 68px 0 32px;
+  line-height: unset;
+}
+
+.vacancies-page .container {
+  width: 1170px;
+}
+
+.vacancies__subtitle.heading {
+  margin-bottom: 34px;
+  line-height: unset;
+}
+
+.vacancies__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 29px;
+  margin-bottom: 56px;
+}
+
+.vacancies__items .vacancy {
+  padding: 31px;
+  background-color: #f0f4f9;
+  color: #0e7dd5;
+  font-family: 'UM', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-decoration: underline;
+}
+
+.vacancies__tip {
+  margin-bottom: 42px;
+  background-color: #f2f6fa;
+}
+
+.vacancies__tip .tip__content {
+  display: flex;
+  padding: 33px 0 43px;
+  color: #70797d;
+}
+
+.vacancies__tip .tip__content .tip__text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 17px;
+}
+
+.vacancies__tip .tip__content a {
+  color: #0e7dd5;
+}
+
+.vacancies__tip .tip__content img {
+  margin-right: 52px;
+}

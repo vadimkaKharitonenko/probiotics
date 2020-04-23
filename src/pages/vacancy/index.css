@@ -1,0 +1,58 @@
+.vacancy-page__title {
+  width: 659px;
+  margin: 75px 0 37px;
+  color: #24313a;
+  font-family: 'UM', sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.vacancy-page .text {
+  margin-bottom: 40px;
+  font-size: 26px;
+}
+
+.vacancy-page .lists {
+  margin: 54px 0 71px;
+}
+
+.vacancy-page .list:not(:last-child) {
+  margin-bottom: 53px;
+}
+
+.vacancy-page .list {
+  width: 668px;
+  margin-left: auto;
+}
+
+.vacancy-page .list__title {
+  color: #0e7dd5;
+  font-family: 'UR', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 66px;
+}
+
+.vacancy-page .list__items {
+  padding-left: 22px;
+  color: #24313a;
+  font-family: 'UR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.vacancy-page .list__items li {
+  position: relative;
+}
+
+.vacancy-page .list__items li::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: -22px;
+  width: 8px;
+  height: 1px;
+  background-color: #0e7dd5;
+}

@@ -1,0 +1,51 @@
+include ../heading/index.pug
+include ../select/index.pug
+include ../button/index.pug
+
+mixin vacancy-form()
+  section.vacancy-form
+    +heading({tag: 'h3', className: 'vacanc-form__title', level: 3})
+      | Отправить резюме
+    .vacancy-form__fields
+      +field({placeholder: 'Имя', error: false, value: ''})
+      +select({
+        current: 'Вакансия',
+        options: [
+          {
+            value: 'Научный руководитель'
+          },
+          {
+            value: 'Врач'
+          },
+          {
+            value: 'Медсестра в лабораторию'
+          },
+          {
+            value: 'Уборщица'
+          },
+          {
+            value: 'Охранник'
+          }
+        ],
+        expanded: false
+      })
+      +field({placeholder: 'Телефон', error: false, value: ''})
+      textarea(placeholder='Ваш комментарий').comment
+      +field({placeholder: 'E-mail', error: false, value: ''})
+    
+    label.vacancy-form__attach
+      input(type="file")
+      span Прикрепить резюме
+      span Файл не выбран
+
+    .vacancy-form__footer
+      +button({theme: 'blue', className: 'vacancy-form__submit'})
+        | Отправить
+      label.vacancy-form__agreement
+        input(type='checkbox' checked)
+        .mark
+          img(src= require('../../assets/img/checked.png'), alt="Checked")
+        p Даю согласие на обработку 
+          a(href="") персональных данных
+          |, ознакомлен с 
+          a(href="") пользовательским соглашением

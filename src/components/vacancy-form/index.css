@@ -1,0 +1,106 @@
+.vacancy-form__fields {
+  display: grid;
+  grid-template-columns: 269px 470px;
+  grid-column-gap: 29px;
+  grid-row-gap: 13px;
+  margin-bottom: 10px;
+}
+
+.vacancy-form__footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 86px;
+}
+
+.vacancy-form__fields .comment {
+  padding: 15px 20px;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  color: #2c343c;
+  font-family: 'UR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid #d6dee8;
+  resize: none;
+}
+
+.vacancy-form__fields .comment:focus {
+  border-color: #a9c1e9;
+}
+
+.vacancy-form__fields .comment::placeholder {
+  color: #78889d;
+}
+
+.vacancy-form__attach {
+  color: #a1a1a1;
+  font-family: 'UR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.vacancy-form__attach input {
+  display: none;
+}
+
+.vacancy-form__attach span:nth-child(2) {
+  margin-right: 28px;
+  color: #0e7dd5;
+  font-family: 'UM', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 66px;
+  text-decoration: underline;
+}
+
+.vacancy-form__submit.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 123px;
+  height: 45px;
+  padding: 0;
+  margin-right: 31px;
+}
+
+.vacancy-form__agreement {
+  display: flex;
+  cursor: pointer;
+}
+
+.vacancy-form__agreement .mark {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d6dee8;
+}
+
+.vacancy-form__agreement .mark img {
+  display: none;
+}
+
+.vacancy-form__agreement input:checked + .mark img {
+  display: block;
+}
+
+.vacancy-form__agreement img {
+  width: 16px;
+  height: 16px;
+}
+
+.vacancy-form__agreement input {
+  display: none;
+}
+
+.vacancy-form__agreement p {
+  margin-left: 14px;
+  color: #24313a;
+  font-family: 'UL', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.vacancy-form__agreement a {
+  text-decoration: underline;
+}

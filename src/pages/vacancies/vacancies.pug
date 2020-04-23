@@ -1,0 +1,112 @@
+include ../../components/header/index.pug
+include ../../components/top-banner/index.pug
+include ../../components/heading/index.pug
+include ../../components/question/index.pug
+include ../../components/footer/index.pug
+include ../../components/description-text/index.pug
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Вакансии
+  body
+    +header({
+      menu: [
+        {
+          text: 'Пробиотики',
+          href: './',
+          active: true
+        },
+        {
+          text: 'Вакцина Гепатита А',
+          href: './',
+          active: false
+        },
+        {
+          text: 'Ингредиенты',
+          href: './',
+          active: false
+        },
+        {
+          text: 'Контрактное производство',
+          href: './',
+          active: false
+        }
+      ]
+    })
+    +top-banner({
+      img: require('../../assets/img/team-bg.png'),
+      items: [
+        {
+          text: 'Главная',
+          link: './'
+        },
+        {
+          text: 'Ингредиенты',
+          link: './'
+        },
+      ],
+      title: 'Ингредиенты',
+      menu: [
+        {
+          text: 'Закваски для молочных заводов',
+          link: './',
+          active: true
+        },
+        {
+          text: 'Биомасса пробиотических бактерий',
+          link: './'
+        },
+        {
+          text: 'ЛИЗАТЫ',
+          link: './',
+        },
+      ]
+    })
+    main
+      .vacancies-page
+        .container-sm
+          +heading({tag: 'h2', className: 'vacancies__title', level: 2})
+            | Вакансии
+
+          +heading({tag: 'h3', className: 'vacancies__subtitle', level: 3})
+            | Производство препаратов-пробиотиков
+        
+        .vacancies__items.container
+          a(href="./vacancy.html").vacancy Инженер-биотехнолог
+          a(href="./vacancy.html").vacancy Инженер микробиологического производства
+          a(href="./vacancy.html").vacancy Микробилолог
+
+        .container-sm
+          +heading({tag: 'h3', className: 'vacancies__subtitle', level: 3})
+            | Производство инъекционных препаратов
+
+        .vacancies__items.container
+          a(href="./vacancy.html").vacancy Микробилолог
+          a(href="./vacancy.html").vacancy Инженер-биотехнолог
+
+        .container-sm
+          +heading({tag: 'h3', className: 'vacancies__subtitle', level: 3})
+            | Отдел биологического и технологического контроля
+
+        .vacancies__items.container
+          a(href="./vacancy.html").vacancy Инженер микробиологического производства
+          a(href="./vacancy.html").vacancy Микробилолог
+          a(href="./vacancy.html").vacancy Инженер-биотехнолог
+
+        .vacancies__tip.container
+          .tip__content.container-sm
+            img(src= require('../../assets/img/tip.svg'), alt="tip")
+
+            .tip__text
+              +description-text({className: ''})
+                | Если в предложенном списке на данный момент нет подходящей для Вас вакансии, но Вы хотите работать в нашей Компании, просто 
+                a(href="./") заполните анкету.
+
+              +description-text({className: ''})
+                | Мы обязательно рассмотрим Вашу кандидатуру и свяжемся с Вами.
+
+    +question()
+    +footer()
