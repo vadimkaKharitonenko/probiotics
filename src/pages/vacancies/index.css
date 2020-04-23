@@ -47,8 +47,9 @@
   grid-row-gap: 17px;
 }
 
-.vacancies__tip .tip__content a {
+.vacancies__tip .tip__content span {
   color: #0e7dd5;
+  cursor: pointer;
 }
 
 .vacancies__tip .tip__content img {

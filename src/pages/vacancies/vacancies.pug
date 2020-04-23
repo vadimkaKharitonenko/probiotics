@@ -4,6 +4,7 @@ include ../../components/heading/index.pug
 include ../../components/question/index.pug
 include ../../components/footer/index.pug
 include ../../components/description-text/index.pug
+include ../../components/vacancy-popup/index.pug
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -103,10 +104,11 @@ html(lang="ru")
             .tip__text
               +description-text({className: ''})
                 | Если в предложенном списке на данный момент нет подходящей для Вас вакансии, но Вы хотите работать в нашей Компании, просто 
-                a(href="./") заполните анкету.
+                span.js-vacancy-popup-open заполните анкету.
 
               +description-text({className: ''})
                 | Мы обязательно рассмотрим Вашу кандидатуру и свяжемся с Вами.
 
     +question()
     +footer()
+    +vacancy-popup()

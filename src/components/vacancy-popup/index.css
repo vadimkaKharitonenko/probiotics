@@ -1,0 +1,151 @@
+.vacancy-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 120;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(7, 24, 37, .77);
+}
+
+.vacancy-popup.hidden {
+  display: none;
+}
+
+.vacancy-popup__close {
+  position: absolute;
+  top: -46px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.vacancy-popup__content {
+  position: relative;
+  width: 770px;
+  padding: 55px 100px 48px;
+  background-color: #ffffff;
+}
+
+.vacancy-popup__title {
+  margin-bottom: 23px;
+  color: #2c343c;
+  font-family: 'UM', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.vacancy-popup__fields {
+  display: grid;
+  grid-template-columns: repeat(2, 270px);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+}
+
+.vacancy-popup__footer {
+  display: flex;
+  align-items: center;
+}
+
+.vacancy-popup__fields .comment {
+  padding: 15px 20px;
+  height: 100px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: #2c343c;
+  font-family: 'UR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid #d6dee8;
+  resize: none;
+}
+
+.vacancy-popup__fields .comment:focus {
+  border-color: #a9c1e9;
+}
+
+.vacancy-popup__fields .comment::placeholder {
+  color: #78889d;
+}
+
+.vacancy-popup__attach {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  color: #a1a1a1;
+  font-family: 'UR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.vacancy-popup__attach input {
+  display: none;
+}
+
+.vacancy-popup__attach span:nth-child(2) {
+  margin-right: 28px;
+  color: #0e7dd5;
+  font-family: 'UM', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 66px;
+  text-decoration: underline;
+}
+
+.vacancy-popup__submit.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 123px;
+  height: 45px;
+  padding: 0;
+  margin-right: 60px;
+}
+
+.vacancy-popup__agreement {
+  display: flex;
+  cursor: pointer;
+}
+
+.vacancy-popup__agreement .mark {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d6dee8;
+}
+
+.vacancy-popup__agreement .mark img {
+  display: none;
+}
+
+.vacancy-popup__agreement input:checked + .mark img {
+  display: block;
+}
+
+.vacancy-popup__agreement img {
+  width: 16px;
+  height: 16px;
+}
+
+.vacancy-popup__agreement input {
+  display: none;
+}
+
+.vacancy-popup__agreement p {
+  width: 285px;
+  margin-left: 14px;
+  color: #24313a;
+  font-family: 'UL', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.vacancy-popup__agreement a {
+  text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+include ../field/index.pug
+
+mixin vacancy-popup()
+  section.vacancy-popup.hidden.js-vacancy-popup
+    .vacancy-popup__content
+      button.vacancy-popup__close.js-vacancy-popup-close
+        img(src= require('../../assets/img/close.png') alt="close")
+      .vacancy-popup__title Отправить резюме
+      .vacancy-popup__fields  
+        +field({placeholder: 'Имя', error: false, value: ''})
+        +field({placeholder: 'Телефон', error: false, value: ''})
+        +field({placeholder: 'E-mail', error: false, value: ''})
+        label.vacancy-popup__attach
+          input(type="file")
+          span Прикрепить резюме
+          span Файл не выбран
+        textarea(placeholder='Ваш комментарий').comment
+      .vacancy-popup__footer
+        +button({theme: 'blue', className: 'vacancy-popup__submit'})
+          | Отправить
+        label.vacancy-popup__agreement
+          input(type='checkbox' checked)
+          .mark
+            img(src= require('../../assets/img/checked.png'), alt="Checked")
+          p Даю согласие на обработку 
+            a(href="") персональных данных
+            |, ознакомлен с 
+            a(href="") пользовательским соглашением
