@@ -88,3 +88,42 @@
     height: 32px;
     border: 1px solid rgba(255, 255, 255, .3);
 }
+
+@media screen and (max-width: 768px) {
+    .team__title.heading {
+        margin: 41px 20px 17px;
+        font-size: 22px;
+        line-height: 66px;
+    }
+
+    .teammates {
+        width: 100%;
+    }
+
+    .teammates .column {
+        width: 100%;
+    }
+
+    .teammates__columns {
+        flex-direction: column;
+        margin-bottom: 26px;
+    }
+
+    .teammate-popup {
+        overflow-y: auto;
+    }
+
+    .teammate-popup__content {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: max-content;
+        margin-top: 300px;
+        padding: 25px 22px;
+    }
+
+    .teammate-popup__img {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 41px;
+    }
+}

@@ -68,6 +68,12 @@ input[type=number] {
 	-moz-font-feature-settings: 'kern';
 }
 
+@media screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+}
+
 @font-face {
 	font-family: 'UB';
 	src: url('fonts/Ubuntu-Bold.eot');
