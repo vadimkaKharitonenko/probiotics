@@ -1,3 +1,8 @@
+.media-item {
+    position: relative;
+    cursor: pointer;
+}
+
 .media-item__img {
     width: 370px;
     height: 231px;
@@ -18,4 +23,12 @@
     padding: 17px 42px;
     font-family: 'UM', sans-serif;
     line-height: 24px;
+}
+
+.media-item__play-icon {
+    position: absolute;
+    top: 67px;
+    left: 141px;
+    width: 87px;
+    height: 87px;;
 }

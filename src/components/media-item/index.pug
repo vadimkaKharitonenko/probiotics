@@ -1,11 +1,10 @@
 include ../heading/index.pug
 
-mixin media-item(media, date, title, type)
-  article.media-item
-    if type == 'img'
-      img(src= media, alt="Media").media-item__img
+mixin media-item(media, date, title, type, videoSrc, photos)
+  article(class=`media-item ${type === 'img' ? 'js-media-item-photo' : 'js-media-item-video'}` data-video= videoSrc data-photos= photos)
     if type == 'video'
-      iframe(src= media frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).media-item__img
+      img(src= require('../../assets/img/play.png'), alt="Play").media-item__play-icon
+    img(src= media, alt="Media").media-item__img
     span.media-item__date= date
     +heading({className: 'media-item__title', tag: 'h2', level: 4})
       a(href="./")= title
