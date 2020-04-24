@@ -44,3 +44,30 @@
 .footer .developer svg {
     margin-left: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: unset;
+    }
+
+    .footer__inner-container {
+        flex-direction: column;
+    }
+
+    .footer__inner-container .socials {
+        order: 0;
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    .footer__inner-container .copyright {
+        order: 1;
+        margin: 46px 0 53px;
+    }
+
+    .footer__inner-container .developer {
+        order: 2;
+        margin-right: 0;
+        margin-bottom: 44px;
+    }
+}

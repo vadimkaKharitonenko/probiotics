@@ -34,3 +34,28 @@
 .page-404__content {
     margin-left: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .page-404 {
+        min-height: calc(100vh - 160px);
+        background-size: 281px 149px;
+        background-position: 51% 118px;
+    }
+
+    .page-404__title {
+        width: 175px;
+        padding-top: 292px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .page-404__description {
+        width: 276px;
+        margin-top: 26px;
+    }
+
+    .page-404__content {
+        margin-left: 0;
+    }
+}
