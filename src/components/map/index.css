@@ -3,3 +3,11 @@
     height: 379px;
     margin-bottom: 81px;
 }
+
+@media screen and (max-width: 768px) {
+    #map {
+        width: calc(100% - 44px);
+        height: 195px;
+        margin: 0 22px 33px;
+    }
+}

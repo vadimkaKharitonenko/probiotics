@@ -195,7 +195,7 @@
 
 @media screen and (max-width: 768px) {
     .question {
-        width: 90%;
+        width: calc(100% - 44px);
         height: 374px;
         background-size: auto;
         background-position: 72%;
@@ -221,11 +221,5 @@
 
     .question__submit.button {
         margin-top: 0;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .question {
-        width: 86%;
     }
 }
