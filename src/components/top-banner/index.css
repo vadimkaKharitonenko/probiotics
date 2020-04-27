@@ -47,8 +47,12 @@
   text-transform: uppercase;
   letter-spacing: 1.8px;
   overflow-x: auto;
+  -ms-overflow-style: none;
 }
 
+.top-banner__menu::-webkit-scrollbar {
+  height: 0;
+}
 
 .top-banner__menu a {
   padding: 17px 15px;
