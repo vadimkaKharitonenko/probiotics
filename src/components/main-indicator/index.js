@@ -8,6 +8,7 @@ function setMainSlide() {
 }
 
 function scrollToSlide(index) {
+  if (!$('#main-sections').children()[index] || !$('.js-main-indicator').children()[index]) return;
   const slide = $('#main-sections').children()[index];
   const theme = $('.js-main-indicator').children()[index].getAttribute('data-theme');
 
@@ -30,6 +31,7 @@ $(function () {
   $(document).delegate('.js-main-indicator .main-indicator__dot', 'click', setMainSlide);
 
   $(window).bind('mousewheel', function (event) {
+    if (document.documentElement.clientWidth <= 768) return;
     const slides = document.querySelector('#main-sections');
     if (!slides) return;
     const slideHeight = 

@@ -31,3 +31,9 @@
 .main-indicator.-theme-blue .main-indicator__dot.active {
     background-color: #3684f2;
 }
+
+@media screen and (max-width: 768px) {
+    .main-indicator {
+        display: none;
+    }
+}

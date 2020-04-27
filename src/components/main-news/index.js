@@ -9,6 +9,15 @@ $(function() {
         slidesToShow: 4,
         slidesToScroll: 1,
         centerPadding: '60px',
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }                
+            }
+        ]
     });
 
     $(document).delegate('.js-main-news-prev', 'click', function() {

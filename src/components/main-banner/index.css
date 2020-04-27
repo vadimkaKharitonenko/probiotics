@@ -46,3 +46,33 @@
     height: 45px;
     padding: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .main-banner__inner-container {
+        margin-top: auto;
+    }
+
+    .main-banner__label {
+        display: block;
+        margin-left: 22px;
+        margin-bottom: 24px;
+        line-height: unset;
+    }
+
+    .main-banner__title.heading {
+        margin-left: 22px;
+        margin-bottom: 23px;
+        font-size: 32px;
+        line-height: unset;
+    }
+
+    .main-banner__btn.button {
+        margin: 0 auto 55px 22px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main-banner__title.heading {
+        width: calc(100% - 44px);
+    }
+}

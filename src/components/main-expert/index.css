@@ -42,3 +42,50 @@
     text-transform: uppercase;
     letter-spacing: 1.8px;
 }
+
+@media screen and (max-width: 768px) {
+    .main-expert {
+        justify-content: flex-start;
+        height: 745px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        background-color: #eff1f2;
+        background-size: 320px;
+        background-image: url('../../assets/img/teammate.png');
+    }
+
+    .main-expert__inner-container {
+        height: 745px;
+    }
+
+    .main-expert__title.heading {
+        margin-top: 55px;
+        margin-left: 22px;
+        margin-bottom: 28px;
+        font-size: 32px;
+        line-height: unset;
+    }
+
+    .main-expert__hightlighted-text {
+        margin-left: 22px;
+        margin-bottom: 42px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .main-expert__name.heading {
+        margin-left: 22px;
+        margin-bottom: 16px;
+    }
+
+    .main-expert__position {
+        margin-left: 22px;
+        line-height: unset;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main-expert__hightlighted-text {
+        width: calc(100% - 44px);
+    }
+}

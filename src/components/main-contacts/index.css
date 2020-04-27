@@ -72,3 +72,48 @@
     margin-left: 45px;
     background-color: #0e7dd5;
 }
+
+@media screen and (max-width: 768px) {
+    .main-contacts {
+        height: max-content;
+    }
+
+    .main-contacts__inner-contacts {
+        height: max-content;
+    }
+
+    .main-contacts__content {
+        flex-direction: column;
+    }
+
+    .main-contacts__title.heading.-level-1 {
+        margin-top: 47px;
+        margin-left: 22px;
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: unset;
+    }
+
+    #contactsMap {
+        width: calc(100% - 44px);
+        height: 195px;
+        margin: 0 22px 42px;
+    }
+
+    .main-contacts__info {
+        margin: 0 22px;
+    }
+
+    .main-contacts__subtitle.heading.-level-3 {
+        margin: 0 0 28px;
+    }
+
+    .main-contacts__description {
+        margin-bottom: 38px;
+    }
+
+    .main-contacts__submit.button {
+        margin-top: 38px;
+        margin-bottom: 61px;
+    }
+}

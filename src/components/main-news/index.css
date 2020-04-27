@@ -44,3 +44,33 @@
     margin-right: 15px;
     width: 109px;
 }
+
+@media screen and (max-width: 768px) {
+    .main-news,
+    .main-news__inner-container {
+        height: max-content;
+    }
+
+    .main-news {
+        padding: 40px 0 53px;
+    }
+
+    .main-news__title.heading.-level-1 {
+        margin-left: 22px;
+        font-size: 32px;
+        line-height: unset;
+    }
+
+    .main-news__arrows {
+        margin-top: 0;
+        margin-right: 22px;
+    }
+
+    .main-news__header {
+        margin-bottom: 21px;
+    }
+
+    .main-news__slider {
+        margin-left: 0;
+    }
+}
