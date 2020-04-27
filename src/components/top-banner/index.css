@@ -6,6 +6,10 @@
   height: 382px;            
 }
 
+.top-banner.hidden .bread-crumbs {
+  display: none;
+}
+
 .top-banner__img {
   position: absolute;
   top: 0;
@@ -76,6 +80,7 @@
   .top-banner__content {
     padding-top: 174px;
     margin: 0 21px;
+    width: calc(100% - 44px);
   }
 
   .top-banner__menu {

@@ -1,7 +1,7 @@
 include ../bread-crumbs/index.pug
 
-mixin top-banner({img, items, title, menu})
-  section.top-banner
+mixin top-banner({img, items, title, menu, hidden=false})
+  section(class=`top-banner ${hidden ? 'hidden' : ''}`)
     img(src= img, alt="Banner").top-banner__img
     .top-banner__content
       +bread-crumbs({items})
