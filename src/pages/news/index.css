@@ -56,3 +56,30 @@
     border: 1px solid rgba(14, 125, 213, .3);
     color: #0e7dd5;
 }
+
+@media screen and (max-width: 768px) {
+    .news__content {
+        width: 100%;
+    }
+
+    .news__title.heading {
+        font-size: 22px;
+        margin: 33px 22px 22px;
+        line-height: unset;
+    }
+
+    .news__items {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .news__tabs {
+        margin: 0 22px 25px;
+        line-height: unset;
+    }
+
+    .news__pagination {
+        margin: 25px auto 36px;
+    }
+}
