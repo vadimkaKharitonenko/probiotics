@@ -32,3 +32,29 @@
     width: 87px;
     height: 87px;;
 }
+
+@media screen and (max-width: 768px) {
+    .media-item {
+        width: 276px;
+    }
+
+    .media-item__img {
+        width: 276px;
+        height: 173px;
+    }
+
+    .media-item__date {
+        padding: 17px 0 14px;
+    }
+
+    .media-item__title.heading {
+        padding: 0;
+    }
+
+    .media-item__play-icon {
+        top: 56px;
+        left: 109px;
+        width: 57px;
+        height: 57px;
+    }
+}

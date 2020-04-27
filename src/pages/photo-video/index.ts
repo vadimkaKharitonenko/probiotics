@@ -8,7 +8,8 @@ type Photos = {
 }
 
 $(function() {
-  const createVideoPopup = (video: string) => document.body.insertAdjacentHTML(`beforeend`, `
+  const createVideoPopup = (video: string) => 
+    document.body.insertAdjacentHTML(`beforeend`, `
     <section class="media-popup-video">
       <div class="media-popup-video__content">
         <button class="media-popup-video__close js-media-popup-video-close">
@@ -19,20 +20,23 @@ $(function() {
     </section>
   `);
 
-  const createPhotoPopup = (photos: Photos) =>  document.body.insertAdjacentHTML(`beforeend`, `
+  const createPhotoPopup = (photos: Photos) =>  
+    document.body.insertAdjacentHTML(`beforeend`, `
     <section class="media-popup-photo">
       <div class="media-popup-photo__content">
         <button class="media-popup-photo__close js-media-popup-photo-close">
           <img src="img/close.png" alt="Close"/>
         </button>
         <button class="media-popup-photo__prev js-media-popup-photo-prev">
-          <img src="img/left-angle.png" alt="prev"/>
+          <img src="${require('../../assets/img/left-angle.png')}" alt="prev"/>
         </button>
         <button class="media-popup-photo__next js-media-popup-photo-next">
-          <img src="img/right-angle.png" alt="next"/>
+          <img src="${require('../../assets/img/right-angle.png')}" alt="next"/>
         </button>
         <div class="media-popup-photo__originals js-media-popup-photo-originals">
-          ${photos.originals.map((photo, i) => `<img key="${i}" src="${photo}" class="original" alt="slide" />`).join('')}
+          ${photos.originals.map((photo, i) => `<div>
+            <img key="${i}" src="${photo}" class="original" alt="slide" />
+          </div>`).join('')}
         </div>
         <div class="media-popup-photo__thumbnails js-media-popup-photo-thumbnails">
           ${photos.thumbnails.map((thumbnail, i) => `<div key="${i}" class="slide"><img src="${thumbnail}" class="thumbnail" alt="thumbnail" /></div>`).join('')}
@@ -45,24 +49,44 @@ $(function() {
     const originals = $('.js-media-popup-photo-originals');
     const thumbnails = $('.js-media-popup-photo-thumbnails');
 
+    const isMobile = document.documentElement.clientWidth <= 768;
+
     if (!originals || !thumbnails) return;
 
-    $(originals).slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.js-media-popup-photo-thumbnails'
-    });
-    $(thumbnails).slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.js-media-popup-photo-originals',
-      arrows: false,
-      focusOnSelect: true,
-      centerMode: true,
-      centerPadding: '186px'
-    });
+    if (isMobile) {
+      const centerPadding = document.documentElement.clientWidth <= 320 ? '20px' : '60px';
+
+      $(originals).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        centerMode: true,
+        centerPadding,
+      });
+    } else {
+      $(originals).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.js-media-popup-photo-thumbnails',
+      });
+    }
+
+    if (isMobile) {
+      $(thumbnails).remove();
+    } else {
+      $(thumbnails).slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.js-media-popup-photo-originals',
+        arrows: false,
+        focusOnSelect: true,
+        centerMode: true,
+        centerPadding: '186px'
+      });
+    }
   }
 
   $(document).delegate('.js-media-popup-photo-close', 'click', function() {

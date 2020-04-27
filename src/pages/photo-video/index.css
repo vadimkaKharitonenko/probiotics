@@ -138,3 +138,99 @@
     border-width: 2px;
     border-color: #3684f2;
 }
+
+@media screen and (max-width: 768px) {
+    .photo-video__content {
+        width: 100%;
+    }
+
+    .photo-video__items {
+        grid-template-columns: 1fr;
+        width: calc(100% - 44px);
+        margin-bottom: 0;
+    }
+
+    .photo-video__title.heading {
+        margin: 30px 22px 23px;
+        font-size: 22px;
+        line-height: unset;
+    }
+
+    .photo-video__tabs {
+        line-height: unset;
+        margin: 0 22px 21px;
+    }
+
+    .photo-video__pagination {
+        margin: 23px auto 34px;
+    }
+
+    .media-popup-photo__content {
+        width: 100%;
+        height: unset;
+    }
+
+    .media-popup-photo__originals .original {
+        width: calc(100% - 44px);
+        height: 60vh;
+        margin: 0 22px;
+    }
+
+    .media-popup-photo__next,
+    .media-popup-photo__prev {
+        display: none;
+    }
+
+    .media-popup-photo__content .slick-dots {
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 15px;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .media-popup-photo__content .slick-dots li {
+        width: 6px;
+        height: 6px;
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 50%;
+    }
+
+    .media-popup-photo__content .slick-dots li.slick-active {
+        background-color: #0e7dd5;
+    }
+
+    .media-popup-photo__content .slick-dots li button::before {
+        display: none;
+    }
+
+    .media-popup-video__content {
+        width: calc(100% - 44px);
+    }
+
+    .media-popup-video__content iframe {
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .photo-video__items {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .media-popup-photo__originals .original {
+        width: 266px;
+        height: 161px;
+        margin: 0 auto;
+    }
+
+    .media-popup-video__close, 
+    .media-popup-photo__close {
+        position: fixed;
+        top: 22px;
+        right: 25px;
+    }
+}
