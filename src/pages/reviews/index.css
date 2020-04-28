@@ -51,3 +51,23 @@
   color: #0e7dd5;
 }
 
+@media screen and (max-width: 768px) {
+  .reviews-page {
+    width: 100%;
+    margin: 27px 0 42px;
+  }
+
+  .reviews-page__title.heading {
+    margin: 0 22px 26px;
+    font-size: 22px;
+    line-height: unset;
+  }
+
+  .reviews-page__tabs {
+    display: none;
+  }
+
+  .reviews-page__pagination {
+    margin: 26px auto 0;
+  }
+} 
