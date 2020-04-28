@@ -18,6 +18,7 @@
   margin: 0 0 80px;
   overflow-x: auto;
   -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 
 .history-slider__years::-webkit-scrollbar {
@@ -119,4 +120,66 @@
   width: 1px;
   height: 730px;
   background-color: #3684f2;
+}
+
+@media screen and (max-width: 768px) {
+  .history-slider {
+    margin-bottom: 35px;
+  }
+
+  .history-slider__years {
+    height: 63px;
+  }
+
+  .history-slider__years .year {
+    width: 71px;
+    height: 49px;
+    font-size: 14px;
+    line-height: unset;
+  }
+
+  .history-slider__years .year.active::before {
+    bottom: -5px;
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+  }
+
+  .history-slider__years .year:first-child {
+    margin-left: 22px;
+  }
+
+  .history-slider__description-slide::before {
+    display: none;
+  }
+
+  .history-slider__content {
+    margin: 0 22px;
+    padding-top: 91px;
+  }
+
+  .history-slider__photo {
+    width: calc(100% - 44px);
+  }
+
+  .history-slider__description {
+    width: calc(100% - 44px);
+    padding: 0 28px;
+  }
+
+  .history-slider__description-slide {
+    width: 80%;
+    margin-left: 44px;
+    margin-top: 26px;
+  }
+
+  .history-slider__description-slide::after {
+    left: -42px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .history-slider__photo {
+    height: 181px;
+  }
 }

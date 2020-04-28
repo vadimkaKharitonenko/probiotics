@@ -5,3 +5,11 @@
 .history-page {
   overflow-x: hidden;
 }
+
+@media screen and (max-width: 768px) {
+  .history__title.heading {
+    margin: 33px 22px 29px;
+    font-size: 22px;
+    line-height: unset;
+  }
+}
