@@ -5,6 +5,7 @@ include ../../components/heading/index.pug
 include ../../components/teammate/index.pug
 include ../../components/partner-item/index.pug
 include ../../components/footer/index.pug
+include ../../components/arrow-button/index.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -86,7 +87,8 @@ html(lang="en")
           text: 'Работа в наукограде Кольцово',
           link: './'
         }
-      ]
+      ],
+      hidden: true
     })
     main
       .container-sm
@@ -96,48 +98,85 @@ html(lang="en")
         +heading({tag: 'h2', className: 'partners__subtitle', level: 3})
           | Производственные компании
 
-      .partners__items.container
-        +partner-item('ЗАО Племзавод «Ирмень»')
-        +partner-item('Барнаульский молочный комбинат')
-        +partner-item('SPLAT')
-        +partner-item('SPLAT')
+      .partners__items.container.js-partners-items
+        div
+          +partner-item('ЗАО Племзавод «Ирмень»')
+        div
+          +partner-item('Барнаульский молочный комбинат')
+        div
+          +partner-item('SPLAT')
+        div
+          +partner-item('SPLAT')
+
+      .partners__controls
+        +arrow-button({direction: 'left', className: 'js-partners-prev'})
+        +arrow-button({direction: 'right', className: 'js-partners-next'})
 
       .container-sm
         +heading({tag: 'h2', className: 'partners__subtitle', level: 3})
           | Органы власти
       
-      .partners__items.container
-        +partner-item('ЗАО Племзавод «Ирмень»')
-        +partner-item('Барнаульский молочный комбинат')
-        +partner-item('SPLAT')
-        +partner-item('SPLAT')
+      .partners__items.container.js-partners-items
+        div
+          +partner-item('ЗАО Племзавод «Ирмень»')
+        div
+          +partner-item('Барнаульский молочный комбинат')
+        div
+          +partner-item('SPLAT')
+        div
+          +partner-item('SPLAT')
+
+      .partners__controls
+        +arrow-button({direction: 'left', className: 'js-partners-prev'})
+        +arrow-button({direction: 'right', className: 'js-partners-next'})
 
       .container-sm
         +heading({tag: 'h2', className: 'partners__subtitle', level: 3})
           | Медицинские организации
       
-      .partners__items.container
-        +partner-item('ЗАО Племзавод «Ирмень»')
-        +partner-item('Барнаульский молочный комбинат')
+      .partners__items.container.js-partners-items
+        div
+          +partner-item('ЗАО Племзавод «Ирмень»')
+        div
+          +partner-item('Барнаульский молочный комбинат')
+      
+      .partners__controls
+        +arrow-button({direction: 'left', className: 'js-partners-prev'})
+        +arrow-button({direction: 'right', className: 'js-partners-next'})
 
       .container-sm
         +heading({tag: 'h2', className: 'partners__subtitle', level: 3})
           | Прочие организации
 
-      .partners__items.container
-        +partner-item('ЗАО Племзавод «Ирмень»')
-        +partner-item('Барнаульский молочный комбинат')
-        +partner-item('SPLAT')
-        +partner-item('SPLAT')
-        +partner-item('SPLAT')
+      .partners__items.container.js-partners-items
+        div
+          +partner-item('ЗАО Племзавод «Ирмень»')
+        div
+          +partner-item('Барнаульский молочный комбинат')
+        div
+          +partner-item('SPLAT')
+        div
+          +partner-item('SPLAT')
+        div
+          +partner-item('SPLAT')
+
+      .partners__controls
+        +arrow-button({direction: 'left', className: 'js-partners-prev'})
+        +arrow-button({direction: 'right', className: 'js-partners-next'})
 
       .container-sm
         +heading({tag: 'h2', className: 'partners__subtitle', level: 3})
           | Сми
 
-      .partners__items.container
-        +partner-item('ЗАО Племзавод «Ирмень»')
-        +partner-item('Барнаульский молочный комбинат')
+      .partners__items.container.js-partners-items
+        div
+          +partner-item('ЗАО Племзавод «Ирмень»')
+        div
+          +partner-item('Барнаульский молочный комбинат')
+
+      .partners__controls
+        +arrow-button({direction: 'left', className: 'js-partners-prev'})
+        +arrow-button({direction: 'right', className: 'js-partners-next'})
 
       +question()
     +footer()
