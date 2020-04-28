@@ -222,4 +222,49 @@
     .question__submit.button {
         margin-top: 0;
     }
+
+    .question__popup-fields {
+        grid-template-columns: 1fr;
+        grid-row-gap: 14px;
+    }
+
+    .question__popup-fields .textarea, .question__popup-fields .field:first-child {
+        grid-column-start: unset;
+        grid-column-end: unset;
+        width: 100%;
+    }
+
+    .question__popup {
+        width: 100%;
+        height: max-content;
+        padding: 30px 22px;
+    }
+
+    .question__popup-title.heading {
+        margin: 0 auto 24px;
+        font-size: 22px;
+    }
+
+    .question__popup-controls {
+        flex-direction: column-reverse;
+    }
+
+    .question__popup-agreement {
+        margin-left: 0;
+        margin-bottom: 26px;
+    }
+
+    .question__popup-controls .button {
+        width: 100%;
+    }
+
+    .question__popup-container {
+        align-items: flex-start;
+        padding: 70px 0;
+        overflow-y: auto;
+    }
+
+    .question__popup-close {
+        right: 24px;
+    }
 }
