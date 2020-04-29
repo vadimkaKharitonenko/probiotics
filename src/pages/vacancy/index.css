@@ -56,3 +56,43 @@
   height: 1px;
   background-color: #0e7dd5;
 }
+
+@media screen and (max-width: 768px) {
+  .vacancy-page__title.heading {
+    width: calc(100% - 44px);
+    margin: 36px 22px 26px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .vacancy-page .text {
+    margin: 0 22px 28px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .vacancy-page .description-text {
+    width: calc(100% - 44px);
+    margin: 0 22px 30px;
+  }
+
+  .vacancy-page .lists {
+    margin: 0 22px 35px;
+  }
+
+  .vacancy-page .lists .list {
+    width: 100%;
+    margin: 0;
+  }
+
+  .vacancy-page .lists .list:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+
+  .vacancy-page .list__title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: unset;
+  }
+}

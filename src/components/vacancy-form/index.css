@@ -104,3 +104,43 @@
 .vacancy-form__agreement a {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .vacancy-form {
+    width: calc(100% - 44px);
+    margin: 0 22px 36px;
+  }
+
+  .vacancy-form__title.heading {
+    width: 100%;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: unset;
+  }
+
+  .vacancy-form__fields {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+  }
+
+  .vacancy-form__fields .select {
+    grid-row-start: 4;
+  }
+
+  .vacancy-form__fields .comment {
+    grid-row-start: 5;
+    grid-row-end: unset;
+    grid-column-start: unset;
+    height: 93px;
+  }
+
+  .vacancy-form__footer {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .vacancy-form__agreement {
+    margin-bottom: 26px;
+  }
+}
