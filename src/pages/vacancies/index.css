@@ -55,3 +55,52 @@
 .vacancies__tip .tip__content img {
   margin-right: 52px;
 }
+
+@media screen and (max-width: 768px) {
+  .vacancies__title.heading {
+    margin: 34px 22px 23px;
+    font-size: 22px;
+    line-height: unset;
+  }
+  
+  .vacancies__subtitle.heading {
+    width: calc(100% - 44px);
+    margin: 0 22px 23px;
+    font-size: 18px;
+    line-height: unset;
+  }
+
+  .vacancies__items {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3px;
+    margin-bottom: 36px;
+  }
+
+  .vacancies__items .vacancy {
+    padding: 27px 20px 30px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .vacancies-page .container,
+  .vacancies__items.container {
+    width: 100%;
+  }
+
+  .vacancies__tip .tip__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .vacancies__tip .tip__content img {
+    width: 46px;
+    height: 46px;
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
+
+  .vacancies__tip .tip__content .description-text {
+    padding: 0 20px;
+  }
+}

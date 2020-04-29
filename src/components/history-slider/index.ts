@@ -16,7 +16,6 @@ $(function () {
 
   function initHistorySlider() {
     const width: number = document.documentElement.clientWidth;
-    console.log(width);
 
     if (width >= 1900) {
       return $('.js-history-slider-years').scrollLeft(155);
