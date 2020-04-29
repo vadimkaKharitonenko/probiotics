@@ -1,4 +1,5 @@
 import './global.css';
+import './animate.css';
 
 const scripts = {};
 

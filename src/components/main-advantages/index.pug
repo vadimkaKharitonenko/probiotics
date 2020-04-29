@@ -3,21 +3,21 @@ include ../description-text/index.pug
 include ../button/index.pug
 
 mixin main-advantages(className)
-    section(class=`main-advantages section ${className ? className : ''}`)
-        .container.main-advantages__inner-container
-            .advantage
-                .advantage__label ЕДИНСТВЕННЫЕ В РОССИИ
-                +heading({tag: 'h2', level: 1, className: 'advantage__title'})
-                    | Ингредиенты
-                +description-text({ className: 'advantage__description' })
-                    | Мы предлагаем технологии и закваски для выпуска лечебно-профилактических кисломолочных продуктов, обогащенных бифидобактериями.
-                +button({theme: 'red', className: 'advantage__btn'})
-                    | Подробнее
-            .advantage
-                .advantage__label МИРОВОЕ КАЧЕСТВО
-                +heading({tag: 'h2', level: 1, className: 'advantage__title'})
-                    | Контрактное производство
-                +description-text({ className: 'advantage__description' })
-                    | Изготавливаем брендированные ампулы, флаконы и шприцы с вашим лекарством по контракту
-                +button({theme: 'red', className: 'advantage__btn'})
-                    | Подробнее
+  section(class=`main-advantages section ${className ? className : ''}`)
+    .container.main-advantages__inner-container
+      .advantage
+        .advantage__label ЕДИНСТВЕННЫЕ В РОССИИ
+        +heading({tag: 'h2', level: 1, className: 'advantage__title fadeInLeft animated delay-1s slow'})
+          | Ингредиенты
+        +description-text({ className: 'advantage__description fadeInLeft animated delay-1s slow' })
+          | Мы предлагаем технологии и закваски для выпуска лечебно-профилактических кисломолочных продуктов, обогащенных бифидобактериями.
+        +button({theme: 'red', className: 'advantage__btn fadeInLeft animated delay-1s slow'})
+          | Подробнее
+      .advantage
+        .advantage__label МИРОВОЕ КАЧЕСТВО
+        +heading({tag: 'h2', level: 1, className: 'advantage__title fadeInRight animated delay-1s slow'})
+          | Контрактное производство
+        +description-text({ className: 'advantage__description fadeInRight animated delay-1s slow' })
+          | Изготавливаем брендированные ампулы, флаконы и шприцы с вашим лекарством по контракту
+        +button({theme: 'red', className: 'advantage__btn fadeInRight animated delay-1s slow'})
+          | Подробнее

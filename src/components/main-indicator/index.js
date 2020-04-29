@@ -7,10 +7,32 @@ function setMainSlide() {
   scrollToSlide($(this).data('value'));
 }
 
+function animateSlideContent(slide) {
+  const leftSide = Array.from(slide.querySelectorAll('.fadeInLeft'));
+  const rightSide = Array.from(slide.querySelectorAll('.fadeInRight'));
+
+  leftSide.concat(rightSide).forEach(node => {
+    let className = 'fadeInRight';
+
+    if (!node.classList) return;
+
+    if (node.classList.contains('fadeInLeft')) {
+      className = 'fadeInLeft';
+    }
+
+    node.classList.remove(className);
+    setTimeout(() => {
+      node.classList.add(className);
+    }, 100);
+  });
+}
+
 function scrollToSlide(index) {
   if (!$('#main-sections').children()[index] || !$('.js-main-indicator').children()[index]) return;
   const slide = $('#main-sections').children()[index];
   const theme = $('.js-main-indicator').children()[index].getAttribute('data-theme');
+
+  animateSlideContent(slide);
 
   theme ?
     $('.js-main-indicator').addClass('-theme-blue') :

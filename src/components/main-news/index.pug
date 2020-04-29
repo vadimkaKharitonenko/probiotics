@@ -3,101 +3,101 @@ include ../arrow-button/index.pug
 include ../news-item/index.pug
 
 mixin main-news(className)
-    section(class=`main-news section ${className ? className : ''}`)
-        .main-news__inner-container
-            .container
-                .main-news__header
-                    +heading({tag: 'h2', level: 1, className: 'main-news__title'})
-                        | Новости
-                    .main-news__arrows
-                        +arrow-button({direction: 'left', className: 'js-main-news-prev'})
-                        +arrow-button({direction: 'right', className: 'js-main-news-next'})
-            .main-news__slider.js-main-news-slider
-                .slide
-                    +news-item({
-                        img: require('../../assets/img/news-1.png'),
-                        label: {
-                            text: 'Новости',
-                            theme: 'blue'
-                        },
-                        date: '20.09.2019',
-                        title: 'День открытых дверей для врачей и фармацевтов',
-                        description: 'Фитнес и пробиотики: как микробиом влияет на качество тренировок?'
-                    })
-                .slide
-                    +news-item({
-                        img: require('../../assets/img/news-2.png'),
-                        label: {
-                            text: 'ПРЕСС-РЕЛИЗ',
-                            theme: 'red'
-                        },
-                        date: '16.09.2019',
-                        title: 'Международный форум технологического развития',
-                        description: 'Компания "Вектор-БиАльгам"приняла участие в Международном форуме технологического развития "Технопром-2019'
-                    })
-                .slide
-                    +news-item({
-                        img: require('../../assets/img/news-3.png'),
-                        label: {
-                            text: 'Новости',
-                            theme: 'blue'
-                        },
-                        date: '20.09.2019',
-                        title: 'Международный форум технологического развития',
-                        description: 'Генеральный директор компании "Вектор-БиАльгам" награжден премией "Благотворитель года"'
-                    })
-                .slide
-                    +news-item({
-                        img: require('../../assets/img/news-4.png'),
-                        label: {
-                            text: 'Новости',
-                            theme: 'blue'
-                        },
-                        date: '20.09.2019',
-                        title: 'Международный форум технологического развития',
-                        description: 'Бизнес-миссия в Греции: новые перспективы'
-                    })
-                .slide
-                    +news-item({
-                        img: require('../../assets/img/news-1.png'),
-                        label: {
-                            text: 'Новости',
-                            theme: 'blue'
-                        },
-                        date: '20.09.2019',
-                        title: 'День открытых дверей для врачей и фармацевтов',
-                        description: 'Фитнес и пробиотики: как микробиом влияет на качество тренировок?'
-                    })
-                .slide
-                    +news-item({
-                        img: require('../../assets/img/news-2.png'),
-                        label: {
-                            text: 'ПРЕСС-РЕЛИЗ',
-                            theme: 'red'
-                        },
-                        date: '16.09.2019',
-                        title: 'Международный форум технологического развития',
-                        description: 'Компания "Вектор-БиАльгам"приняла участие в Международном форуме технологического развития "Технопром-2019'
-                    })
-                .slide
-                    +news-item({
-                        img: require('../../assets/img/news-3.png'),
-                        label: {
-                            text: 'Новости',
-                            theme: 'blue'
-                        },
-                        date: '20.09.2019',
-                        title: 'Международный форум технологического развития',
-                        description: 'Генеральный директор компании "Вектор-БиАльгам" награжден премией "Благотворитель года"'
-                    })
-                .slide
-                    +news-item({
-                        img: require('../../assets/img/news-4.png'),
-                        label: {
-                            text: 'Новости',
-                            theme: 'blue'
-                        },
-                        date: '20.09.2019',
-                        title: 'Международный форум технологического развития',
-                        description: 'Бизнес-миссия в Греции: новые перспективы'
-                    })
+  section(class=`main-news section ${className ? className : ''}`)
+    .main-news__inner-container
+      .container
+        .main-news__header
+          +heading({tag: 'h2', level: 1, className: 'main-news__title fadeInLeft animated delay-1s slow'})
+            | Новости
+          .main-news__arrows
+            +arrow-button({direction: 'left', className: 'js-main-news-prev'})
+            +arrow-button({direction: 'right', className: 'js-main-news-next'})
+      .main-news__slider.fadeInLeft.animated.delay-1s.slow.js-main-news-slider
+        .slide
+          +news-item({
+            img: require('../../assets/img/news-1.png'),
+            label: {
+              text: 'Новости',
+              theme: 'blue'
+            },
+            date: '20.09.2019',
+            title: 'День открытых дверей для врачей и фармацевтов',
+            description: 'Фитнес и пробиотики: как микробиом влияет на качество тренировок?'
+          })
+        .slide
+          +news-item({
+            img: require('../../assets/img/news-2.png'),
+            label: {
+              text: 'ПРЕСС-РЕЛИЗ',
+              theme: 'red'
+            },
+            date: '16.09.2019',
+            title: 'Международный форум технологического развития',
+            description: 'Компания "Вектор-БиАльгам"приняла участие в Международном форуме технологического развития "Технопром-2019'
+          })
+        .slide
+          +news-item({
+            img: require('../../assets/img/news-3.png'),
+            label: {
+              text: 'Новости',
+              theme: 'blue'
+            },
+            date: '20.09.2019',
+            title: 'Международный форум технологического развития',
+            description: 'Генеральный директор компании "Вектор-БиАльгам" награжден премией "Благотворитель года"'
+          })
+        .slide
+          +news-item({
+            img: require('../../assets/img/news-4.png'),
+            label: {
+              text: 'Новости',
+              theme: 'blue'
+            },
+            date: '20.09.2019',
+            title: 'Международный форум технологического развития',
+            description: 'Бизнес-миссия в Греции: новые перспективы'
+          })
+        .slide
+          +news-item({
+            img: require('../../assets/img/news-1.png'),
+            label: {
+              text: 'Новости',
+              theme: 'blue'
+            },
+            date: '20.09.2019',
+            title: 'День открытых дверей для врачей и фармацевтов',
+            description: 'Фитнес и пробиотики: как микробиом влияет на качество тренировок?'
+          })
+        .slide
+          +news-item({
+            img: require('../../assets/img/news-2.png'),
+            label: {
+              text: 'ПРЕСС-РЕЛИЗ',
+              theme: 'red'
+            },
+            date: '16.09.2019',
+            title: 'Международный форум технологического развития',
+            description: 'Компания "Вектор-БиАльгам"приняла участие в Международном форуме технологического развития "Технопром-2019'
+          })
+        .slide
+          +news-item({
+            img: require('../../assets/img/news-3.png'),
+            label: {
+              text: 'Новости',
+              theme: 'blue'
+            },
+            date: '20.09.2019',
+            title: 'Международный форум технологического развития',
+            description: 'Генеральный директор компании "Вектор-БиАльгам" награжден премией "Благотворитель года"'
+          })
+        .slide
+          +news-item({
+            img: require('../../assets/img/news-4.png'),
+            label: {
+              text: 'Новости',
+              theme: 'blue'
+            },
+            date: '20.09.2019',
+            title: 'Международный форум технологического развития',
+            description: 'Бизнес-миссия в Греции: новые перспективы'
+          })

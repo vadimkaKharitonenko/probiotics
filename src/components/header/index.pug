@@ -14,7 +14,7 @@ mixin header({menu})
       button.header__menu-btn.js-header-menu
         img(src=require('../../assets/img/menu-icon.png'), alt="menu icon")
         img(src=require('../../assets/img/cancel.png'), alt="menu icon")
-      .header__search
+      .header__search.animated.fadeIn.faster
         button.search__submit
           svg(width='16' height='16' xmlns='http://www.w3.org/2000/svg' version='1.1', xmlns:xlink='http://www.w3.org/1999/xlink', xmlns:avocode='https://avocode.com/' viewBox='0 0 16 16')
             path(d='M15.78705,15.78698c-0.26104,0.26142 -0.68161,0.26142 -0.94265,0l-3.84247,-3.83905c-1.161,0.95255 -2.64519,1.52356 -4.26636,1.52356c-3.72162,0 -6.73542,-3.0173 -6.73542,-6.73577c0,-3.71847 3.0138,-6.73577 6.73542,-6.73577c3.71841,0 6.73576,3.0173 6.73576,6.73577c0,1.62086 -0.57415,3.10838 -1.52676,4.26939l3.84247,3.84304c0.26093,0.25744 0.26093,0.68107 0,0.93883zM12.13375,6.73572c0,-2.97455 -2.42329,-5.39819 -5.39818,-5.39819c-2.9781,0 -5.39806,2.42363 -5.39806,5.39819c0,2.97455 2.41997,5.39516 5.39806,5.39516c2.97489,0 5.39818,-2.4206 5.39818,-5.39516z' fill='#e0979d' fill-opacity='1')
@@ -23,7 +23,7 @@ mixin header({menu})
           svg(width='13' height='13' xmlns='http://www.w3.org/2000/svg' version='1.1', xmlns:xlink='http://www.w3.org/1999/xlink', xmlns:avocode='https://avocode.com/' viewBox='0 0 13 13')
             image(xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAdElEQVQoU63S0QmDMBAA0OdU7SxdRKnfFl2ks+gUXUUOKmhMFEvvKyS85O5yFT54o3UeHR4VYvHEgObA9ajxChSxbJTg5nxBR3B34RrlYDaDFK3hhFuu1hwKOH5BwHvanL+8lNZwWlOp7cXuXf6nnybi8uzNGeAs1nGGC60AAAAASUVORK5CYII=' width='13' height='13' transform='matrix(1,0,0,1,0,0)')
 
-    .header__main-menu.js-header-main-menu.hidden
+    .header__main-menu.animated.fadeIn.js-header-main-menu.hidden
       .left
         a(href="") О компании
         a(href="") Сотрудничество

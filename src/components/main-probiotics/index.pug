@@ -1,11 +1,11 @@
 mixin main-probiotics(className)
-    section(class=`main-probiotics section ${className ? className : ''}`)
-        .container.main-probiotics__inner-container
-            .main-probiotics__label ПРОДУКТЫ
-            +heading({tag: 'h2', level: 1, className: 'main-probiotics__title'})
-                | Пробиотики
-            .main-probiotics__description Эти пробиотические препараты могут использоваться в разных областях медицины для профилактики 
-                br
-                | и комплексного лечения многих заболеваний.
-            +button({theme: 'red', className: 'main-probiotics__btn'})
-                | В каталог
+  section(class=`main-probiotics section ${className ? className : ''}`)
+    .container.main-probiotics__inner-container
+      .main-probiotics__label ПРОДУКТЫ
+      +heading({tag: 'h2', level: 1, className: 'main-probiotics__title fadeInLeft animated delay-1s slow'})
+        | Пробиотики
+      .main-probiotics__description.fadeInLeft.animated.delay-1s.slow Эти пробиотические препараты могут использоваться в разных областях медицины для профилактики 
+        br
+        | и комплексного лечения многих заболеваний.
+      +button({theme: 'red', className: 'main-probiotics__btn fadeInLeft animated delay-1s slow'})
+        | В каталог

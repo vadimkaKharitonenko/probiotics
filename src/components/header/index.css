@@ -214,7 +214,7 @@
 
     .header__main-menu .left .phones {
         position: absolute;
-        bottom: -152px;
+        top: 600px;
         left: 28px;
         display: grid;
         grid-row-gap: 27px;

@@ -11,6 +11,13 @@ $(function() {
         centerPadding: '60px',
         responsive: [
             {
+              breakpoint: 1500,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+              }               
+            },
+            {
                 breakpoint: 769,
                 settings: {
                     slidesToShow: 1,

@@ -2,10 +2,20 @@ include ../heading/index.pug
 include ../button/index.pug
 
 mixin main-banner(className)
-    section(class=`main-banner section ${className ? className : ''}`)
-        .container.main-banner__inner-container
-            span.main-banner__label Вектор-БиАльгам
-            +heading({tag: 'h1', level: 1, className: 'main-banner__title'})
-                | Когда наука служит людям
-            +button({theme: 'red', className: 'main-banner__btn'})
-                | О компании
+  section(class=`main-banner section ${className ? className : ''}`)
+    video(autoplay muted loop type='video/mp4').main-banner__video
+      source(src=require('../../assets/video/video.mp4'), type="video/mp4")
+    .container.main-banner__inner-container
+      span.main-banner__label.fadeInLeft.animated Вектор-БиАльгам
+      +heading({
+        tag: 'h1', 
+        level: 1, 
+        className: 'main-banner__title fadeInLeft animated delay-1s slow'
+      })
+        | Когда наука служит людям
+      +button({
+        theme: 'red', 
+        className: 'main-banner__btn fadeInLeft animated delay-1s slow'
+      })
+        | О компании
+        

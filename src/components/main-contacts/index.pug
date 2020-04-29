@@ -1,21 +1,21 @@
 mixin main-contacts(className)
-    section(class=`main-contacts section ${className ? className : ''}`)
-        .container.main-contacts__inner-contacts
-            +heading({tag: 'h2', level: 1, className: 'main-contacts__title'})
-                | Контакты
-            .main-contacts__content
-                #contactsMap
-                .main-contacts__info
-                    +heading({tag: 'h2', level: 3, className: 'main-contacts__subtitle'})
-                        | Адрес
-                    +description-text({className: 'main-contacts__description'})
-                        | Новосибирская область, 
-                        br
-                        | р.п. Кольцово, ул. Центральная, 13А
-                    +heading({tag: 'h2', level: 3, className: 'main-contacts__subtitle'})
-                        | Телефон
-                    .phones
-                        a(href='tel: +7 (383) 336-51-51') +7 (383) 336-51-51
-                        a(href='tel: +7 (383) 336-75-50') +7 (383) 336-75-50
-                    +button({theme: 'red', className: 'main-contacts__submit'})
-                        | Задать вопрос
+  section(class=`main-contacts section ${className ? className : ''}`)
+    .container.main-contacts__inner-contacts
+      +heading({tag: 'h2', level: 1, className: 'main-contacts__title fadeInLeft animated delay-1s slow'})
+        | Контакты
+      .main-contacts__content
+        #contactsMap.fadeInLeft.animated.delay-1s.slow
+        .main-contacts__info.fadeInRight.animated.delay-1s.slow
+          +heading({tag: 'h2', level: 3, className: 'main-contacts__subtitle'})
+            | Адрес
+          +description-text({className: 'main-contacts__description'})
+            | Новосибирская область, 
+            br
+            | р.п. Кольцово, ул. Центральная, 13А
+          +heading({tag: 'h2', level: 3, className: 'main-contacts__subtitle'})
+            | Телефон
+          .phones
+            a(href='tel: +7 (383) 336-51-51') +7 (383) 336-51-51
+            a(href='tel: +7 (383) 336-75-50') +7 (383) 336-75-50
+          +button({theme: 'red', className: 'main-contacts__submit'})
+            | Задать вопрос

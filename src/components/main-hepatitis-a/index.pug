@@ -1,9 +1,9 @@
 mixin main-hepatitis-a(className)
-    section(class=`main-hepatitis-a section ${className ? className : ''}`)
-        .container.main-hepatitis-a__inner-container
-            .main-hepatitis-a__label ЕДИНСТВЕННЫЕ В РОССИИ
-            +heading({tag: 'h2', level: 1, className: 'main-hepatitis-a__title'})
-                | Вакцина Гепатита А
-            .main-hepatitis-a__description Отечественная разработка, не уступающая по эффективности зарубежным аналогам и не содержащая антибиотиков.
-            +button({theme: 'blue', className: 'main-hepatitis-a__btn'})
-                | Узнать больше
+  section(class=`main-hepatitis-a section ${className ? className : ''}`)
+    .container.main-hepatitis-a__inner-container
+      .main-hepatitis-a__label ЕДИНСТВЕННЫЕ В РОССИИ
+      +heading({tag: 'h2', level: 1, className: 'main-hepatitis-a__title fadeInLeft animated delay-1s slow'})
+        | Вакцина Гепатита А
+      .main-hepatitis-a__description.fadeInLeft.animated.delay-1s.slow Отечественная разработка, не уступающая по эффективности зарубежным аналогам и не содержащая антибиотиков.
+      +button({theme: 'blue', className: 'main-hepatitis-a__btn fadeInLeft animated delay-1s slow'})
+        | Узнать больше
