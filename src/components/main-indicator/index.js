@@ -1,6 +1,8 @@
 import './index.css';
 import $ from 'jquery';
 
+let scrollIsBlocked = false;
+
 function setMainSlide() {
   $('.js-main-indicator .main-indicator__dot').removeClass('active');
   $(this).addClass('active');
@@ -49,24 +51,44 @@ function scrollToSlide(index) {
   }
 }
 
+function handler(e) {
+  if (scrollIsBlocked) {
+    e.preventDefault();
+    document.body.style.overflow = 'hidden';
+    return;
+  }
+  if (document.documentElement.clientWidth <= 768) return;
+  scrollIsBlocked = true;
+
+  const slides = document.querySelector('#main-sections');
+  if (!slides) return;
+
+  const slideHeight =
+    document.documentElement.clientHeight /
+    (slides.childElementCount - 1);
+  const slideIndex = Math.round(document.body.scrollTop / Math.round(slideHeight));
+
+  if (e.wheelDelta >= 0) {
+    scrollToSlide(slideIndex - 1);
+  } else {
+    scrollToSlide(slideIndex + 1);
+  }
+
+  setTimeout(() => {
+    scrollIsBlocked = false;
+  }, 1500);
+}
+
 $(function () {
-  $(document).delegate('.js-main-indicator .main-indicator__dot', 'click', setMainSlide);
+  if (document.querySelector('.js-main-indicator')) {
+    $(document).delegate('.js-main-indicator .main-indicator__dot',
+      'click', setMainSlide);
 
-  $(window).bind('mousewheel', function (event) {
-    if (document.documentElement.clientWidth <= 768) return;
-    const slides = document.querySelector('#main-sections');
-    if (!slides) return;
-    const slideHeight = 
-      document.documentElement.clientHeight / 
-      (slides.childElementCount - 1);
-    const slideIndex = Math.round(document.body.scrollTop / Math.round(slideHeight));
-
-    if (event.originalEvent.wheelDelta >= 0) {
-      scrollToSlide(slideIndex - 1);
-    } else {
-      scrollToSlide(slideIndex + 1);
+    if (document.documentElement.clientWidth >= 768) {
+      document.addEventListener('mousewheel', handler, false);
+      document.addEventListener('DOMMouseScroll', handler, false);
     }
-  });
+  }
 });
 
 
