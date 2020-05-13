@@ -197,9 +197,10 @@
     .question {
         width: calc(100% - 44px);
         height: 374px;
-        background-size: auto;
-        background-position: 72%;
         margin: 0 22px 31px;
+        background-image: url('../../assets/img/question-mobile-bg.png');
+        background-size: cover;
+        background-position: 72%;
     }
 
     .question__title {

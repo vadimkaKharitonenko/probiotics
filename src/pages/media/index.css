@@ -54,9 +54,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .media__content {
+    .media__content.container-sm {
         width: calc(100% - 44px);
-        margin-top: 33px;
+        margin: 33px 20px 0;
     }
 
     .media__title.heading {

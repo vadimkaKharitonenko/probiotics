@@ -12,7 +12,7 @@ mixin main-news(className)
           .main-news__arrows
             +arrow-button({direction: 'left', className: 'js-main-news-prev'})
             +arrow-button({direction: 'right', className: 'js-main-news-next'})
-      .main-news__slider.fadeInLeft.animated.delay-1s.slow.js-main-news-slider
+      .main-news__slider.fadeInLeft.animated.delay-button.slow.js-main-news-slider
         .slide
           +news-item({
             img: require('../../assets/img/news-1.png'),

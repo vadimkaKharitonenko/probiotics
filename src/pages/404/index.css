@@ -4,12 +4,12 @@
     background-color: #0442bc;
     background-image: url('../../assets/img/404.png');
     background-repeat: no-repeat;
-    background-size: 45%;
-    background-position: 51% 38%;
+    background-size: 50%;
+    background-position: 50% 38%;
 }
 
 .page-404__title {
-    width: max-content;
+    width: 676px;
     margin: 0 auto;
     padding-top: 586px;
     color: #ffffff;
@@ -22,6 +22,8 @@
 .page-404__description {
     width: max-content;
     margin: 31px auto 0;
+    padding-right: 25px;
+    padding-bottom: 92px;
     font-family: 'UM', sans-serif;
     color: #b0bfde;
     text-align: center;
@@ -39,20 +41,22 @@
     .page-404 {
         min-height: calc(100vh - 160px);
         background-size: 281px 149px;
-        background-position: 51% 118px;
+        background-position: 51% 102px;
+        margin-bottom: -1px;
     }
 
     .page-404__title {
         width: 175px;
-        padding-top: 292px;
+        padding-top: 270px;
         text-align: center;
         font-size: 32px;
         line-height: 36px;
     }
 
     .page-404__description {
-        width: 276px;
-        margin-top: 26px;
+        width: 300px;
+        margin-top: 19px;
+        padding-right: 0;
     }
 
     .page-404__content {

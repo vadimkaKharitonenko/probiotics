@@ -1,6 +1,6 @@
 .main-indicator {
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     top: 56%;

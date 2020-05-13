@@ -59,6 +59,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main-hepatitis-a {
+        height: max-content;
+    }
+
     .main-hepatitis-a__label {
         margin-left: 22px;
         margin-bottom: 24px;

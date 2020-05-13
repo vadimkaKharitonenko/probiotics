@@ -31,8 +31,21 @@ function animateSlideContent(slide) {
 
 function scrollToSlide(index) {
   if (!$('#main-sections').children()[index] || !$('.js-main-indicator').children()[index]) return;
+  const prevSlide = $('#main-sections').children()[index - 1];
   const slide = $('#main-sections').children()[index];
   const theme = $('.js-main-indicator').children()[index].getAttribute('data-theme');
+
+  if (prevSlide) {
+    $(prevSlide).css('position', 'sticky');
+    $(prevSlide).css('top', 0);
+    $(prevSlide).css('z-index', index);
+
+    $(slide).css('position', 'relative');
+    $(slide).css('z-index', index);
+  } else {
+    $(slide).css('position', 'relative');
+    $(slide).css('z-index', index);
+  }
 
   animateSlideContent(slide);
 
@@ -44,7 +57,7 @@ function scrollToSlide(index) {
     const offset = $(slide).offset();
     $([document.documentElement, document.body]).animate({
       scrollTop: offset.top
-    }, 300);
+    }, 500);
 
     $('.js-main-indicator .main-indicator__dot').removeClass('active');
     $('.js-main-indicator').children()[index].classList.add('active');
@@ -85,8 +98,8 @@ $(function () {
       'click', setMainSlide);
 
     if (document.documentElement.clientWidth >= 768) {
-      document.addEventListener('mousewheel', handler, false);
-      document.addEventListener('DOMMouseScroll', handler, false);
+      document.addEventListener('mousewheel', handler, {passive: false});
+      document.addEventListener('DOMMouseScroll', handler, {passive: false});
     }
   }
 });
