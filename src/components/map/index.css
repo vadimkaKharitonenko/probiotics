@@ -4,6 +4,10 @@
     margin-bottom: 81px;
 }
 
+#map canvas {
+    filter: grayscale(1);
+}
+
 @media screen and (max-width: 768px) {
     #map {
         width: calc(100% - 44px);

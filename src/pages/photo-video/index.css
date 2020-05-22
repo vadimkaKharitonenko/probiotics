@@ -7,7 +7,7 @@
 }
 
 .photo-video__tabs {
-    color: #0e7dd5;
+    color: #7997af;
     font-family: 'UM', sans-serif;
     font-size: 10px;
     font-weight: 500;
@@ -20,7 +20,7 @@
 }
 
 .photo-video__tabs .active {
-    color: #7997af;
+    color: #0e7dd5;
 }
 
 .photo-video__items {

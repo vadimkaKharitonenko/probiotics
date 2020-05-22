@@ -25,6 +25,10 @@ $(function () {
       return $('.js-history-slider-years').scrollLeft(155 * 2 - 2);
     }
 
+    if (width >= 1440) {
+      return $('.js-history-slider-years').scrollLeft(155 * 3 - 77);
+    }
+
     if (width >= 1425) {
       return $('.js-history-slider-years').scrollLeft(155 * 3 - 70);
     }
@@ -47,6 +51,11 @@ $(function () {
     if (width <= 1600) {
       addiction = 1;
       offset = 2;
+    }
+
+    if (width <= 1440) {
+      addiction = 2;
+      offset = 77;
     }
 
     if (width <= 1425) {

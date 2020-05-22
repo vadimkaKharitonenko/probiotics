@@ -73,6 +73,10 @@
     background-color: #0e7dd5;
 }
 
+#contactsMap canvas {
+    filter: grayscale(1);
+}
+
 @media screen and (max-width: 768px) {
     .main-contacts {
         height: max-content;
