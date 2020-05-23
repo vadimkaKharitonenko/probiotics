@@ -1,5 +1,6 @@
 mixin main-probiotics(className)
   section(class=`main-probiotics section ${className ? className : ''}`)
+    img(src=require('../../assets/img/second-screen-move.png')).main-probiotics__move
     .container.main-probiotics__inner-container
       .main-probiotics__label ПРОДУКТЫ
       +heading({tag: 'h2', level: 1, className: 'main-probiotics__title fadeInLeft animated delay-1s slow'})
