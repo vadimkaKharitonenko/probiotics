@@ -8,6 +8,7 @@
     background-image: url('../../assets/img/main-contacts.png');
     background-size: cover;
     background-position: 0 50%;
+    overflow: hidden;
 }
 
 .main-contacts__inner-contacts {
