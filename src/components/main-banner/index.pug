@@ -4,7 +4,7 @@ include ../button/index.pug
 mixin main-banner(className)
   section(class=`main-banner section ${className ? className : ''}`)
     video(autoplay muted loop type='video/mp4').main-banner__video
-      source(src=require('../../assets/video/video.mp4'), type="video/mp4")
+      source(src=require('../../assets/video/bialgam_video.mp4'), type="video/mp4")
     .container.main-banner__inner-container
       span.main-banner__label.fadeInLeft.animated Вектор-БиАльгам
       +heading({
