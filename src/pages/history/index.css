@@ -6,6 +6,40 @@
   overflow-x: hidden;
 }
 
+.history-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-page__controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.history-page__prev,
+.history-page__next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #c2dafb;
+}
+
+.history-page__next {
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .history__title.heading {
+    margin: 27px 0 41px;
+    font-size: 32px;
+    line-height: 66px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .history__title.heading {
     margin: 33px 22px 29px;

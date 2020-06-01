@@ -122,6 +122,30 @@
   background-color: #3684f2;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .history-slider {
+    margin-bottom: 67px;
+  }
+
+  .history-slider__content {
+    padding-top: 154px;
+  }
+
+  .history-slider__photo {
+    width: 705px;
+    height: 450px;
+  }
+
+  .history-slider__description {
+    width: 705px;
+    height: 70px;
+  }
+
+  .history-page__controls {
+    margin-right: 70px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .history-slider {
     margin-bottom: 35px;

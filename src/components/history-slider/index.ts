@@ -14,6 +14,14 @@ $(function () {
     $('.js-history-slider-description').text(data.description);
   }
 
+  function goToPreviousSlide() {
+    $('.active.js-history-year').prev().click();
+  }
+
+  function goToNextSlide() {
+    $('.active.js-history-year').next().click();
+  }
+
   function initHistorySlider() {
     const width: number = document.documentElement.clientWidth;
 
@@ -81,6 +89,8 @@ $(function () {
 
     changeSlide(data);
   });
+  $(document).delegate('.js-history-slider-prev', 'click', goToPreviousSlide);
+  $(document).delegate('.js-history-slider-next', 'click', goToNextSlide);
 
   initHistorySlider();
 });

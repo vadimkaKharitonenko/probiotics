@@ -90,9 +90,14 @@ html(lang="ru")
     })
     main
       .history-page
-        .container-sm
+        .container-sm.history-page__header
           +heading({tag: 'h2', className: 'history__title', level: 2})
             | История
+          .history-page__controls
+            button.history-page__prev.js-history-slider-prev
+              img(src=require('../../assets/img/arrow-left.png'))
+            button.history-page__next.js-history-slider-next
+              img(src=require('../../assets/img/arrow-right.png'))
 
         +history-slider([
           {
