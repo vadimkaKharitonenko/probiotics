@@ -193,9 +193,22 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
     .question {
-        width: 100%;
+        width: 950px;
+        margin-bottom: 56px;
+    }
+
+    .question__title {
+        padding: 62px 0 29px 82px
+    }
+
+    .question__content {
+        margin-left: 200px;
+    }
+
+    .question__description {
+        margin-right: 240px;
     }
 }
 

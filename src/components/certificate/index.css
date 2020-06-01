@@ -24,6 +24,16 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .certificate__title {
+        max-width: 255px;
+    }
+
+    .certificate__img {
+        margin-bottom: 4px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .certificate__img {
         max-width: 100%;

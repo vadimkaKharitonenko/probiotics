@@ -62,6 +62,32 @@
   background-color: #0653eb;
 }
 
+@media screen and (max-width: 1170px) and (min-width: 768px) {
+  .top-banner {
+    height: 250px;
+  }
+
+  .top-banner__title {
+    margin-top: 0;
+    font-size: 50px;
+    line-height: 82px;
+  }
+
+  .top-banner__content {
+    width: 76.2%;
+    padding-top: 105px;
+  }
+
+  .top-banner__img {
+    height: 250px;
+  }
+
+  .top-banner__menu {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .top-banner {
     height: 281px;

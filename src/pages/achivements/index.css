@@ -63,6 +63,36 @@
   color: #0e7dd5;
 }
 
+@media screen and (max-width: 1170px) and (min-width: 768px) {
+  .achivements__title.heading {
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 66px;
+  }
+
+  .achivements__header {
+    width: 77%;
+    margin: 27px auto 0;
+  }
+
+  .achivements__tabs a:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .achivements__items {
+    width: 948px;
+    margin: 0 auto;
+  }
+
+  .achivements__items .certificate:not(:last-child) {
+    margin-right: 80px;
+  }
+
+  .achivements__pagination {
+    margin: 0 auto 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .achivements__title.heading {
     margin-bottom: 20px;
