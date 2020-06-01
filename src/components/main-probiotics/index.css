@@ -96,6 +96,33 @@
     margin-top: 38px;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .main-probiotics__inner-container {
+        width: 816px;
+        margin-top: 58px;
+    }
+
+    .main-probiotics__title.heading {
+        margin-bottom: 32px;
+        font-size: 50px;
+        line-height: 52px;
+    }
+
+    .main-probiotics__label {
+        margin-bottom: 0;
+        line-height: 66px;
+    }
+
+    .main-probiotics__description {
+        margin-left: 14px;
+        margin-bottom: 40px;
+    }
+
+    .main-probiotics__btn.button {
+        margin-left: 14px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-probiotics {
         height: max-content;

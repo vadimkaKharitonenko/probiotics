@@ -44,6 +44,26 @@
     width: 109px;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .main-news__header {
+        margin: 57px 0 14px 13px;
+    }
+
+    .main-news__slider {
+        margin-left: 100px;
+    }
+
+    .main-news__arrows {
+        display: none;
+    }
+
+    .main-news__title.heading.-level-1 {
+        margin-left: 104px;
+        font-size: 40px;
+        line-height: 90px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-news,
     .main-news__inner-container {

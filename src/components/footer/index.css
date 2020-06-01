@@ -45,6 +45,21 @@
     margin-left: 5px;
 }
 
+@media screen and (max-width: 1024px) {
+    .footer .copyright {
+        margin-left: 37px;
+    }
+
+    .footer .developer {
+        margin-right: 38px;
+    }
+
+    .footer .socials {
+        margin-left: 2px;
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .footer {
         height: unset;

@@ -86,6 +86,29 @@
     padding: 0;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .main-hepatitis-a__inner-container {
+        width: 816px;
+        margin-bottom: 0;
+        margin-top: 60px;
+    }
+
+    .main-hepatitis-a__title.heading {
+        margin-bottom: 33px;
+        font-size: 50px;
+        line-height: 52px;
+    }
+
+    .main-hepatitis-a__description {
+        margin-left: 14px;
+        margin-bottom: 32px;
+    }
+
+    .main-hepatitis-a__btn.button {
+        margin-left: 14px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-hepatitis-a {
         height: max-content;

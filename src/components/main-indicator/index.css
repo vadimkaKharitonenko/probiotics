@@ -32,6 +32,13 @@
     background-color: #3684f2;
 }
 
+@media screen and (max-width: 1140px) and (min-width: 768px) {
+    .main-indicator {
+        top: 68.4%;
+        left: 2.7%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-indicator {
         display: none;

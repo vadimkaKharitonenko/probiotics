@@ -43,6 +43,41 @@
     letter-spacing: 1.8px;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .main-expert {
+        background-position: 10px 19px;
+    }
+
+    .main-expert__inner-container {
+        width: 816px;
+        margin-top: 106px;
+    }
+
+    .main-expert__title.heading {
+        margin-bottom: 13px;
+        font-size: 40px;
+        line-height: 90px;
+    }
+
+    .main-expert__hightlighted-text {
+        width: 57%;
+        margin-bottom: 46px;
+        margin-left: 12px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .main-expert__position,
+    .main-expert__name.heading {
+        margin-left: 0;
+    }
+
+    .main-expert__position,
+    .main-expert__name.heading {
+        margin-left: 11px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-expert {
         justify-content: flex-start;

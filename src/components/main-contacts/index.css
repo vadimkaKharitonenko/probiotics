@@ -78,6 +78,44 @@
     filter: grayscale(1);
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .main-contacts__title.heading.-level-1 {
+        margin: 74px 0 0 117px;
+        font-size: 40px;
+        line-height: 90px;
+    }
+
+    .main-contacts__subtitle.heading.-level-3 {
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+
+    .main-contacts__description {
+        width: 107%;
+        margin-bottom: 16px;
+    }
+
+    .main-contacts__content {
+        width: 874px;
+        margin: 0 auto;
+    }
+
+    .main-contacts__info {
+        margin-top: 6px;
+        margin-left: 114px;
+    }
+
+    #contactsMap {
+        width: 480px;
+        height: 280px;
+        margin-top: 11px;
+    }
+
+    .main-contacts__submit.button {
+        margin-top: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-contacts {
         height: max-content;

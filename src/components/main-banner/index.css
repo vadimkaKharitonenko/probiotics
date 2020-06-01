@@ -56,6 +56,35 @@
     padding: 0;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .main-banner__inner-container {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        width: 816px;
+        margin-top: 170px;
+    }
+
+    .main-banner__title.heading {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        width: 56%;
+        margin-bottom: 0;
+        margin-left: 10px;
+        font-size: 50px;
+        line-height: 52px;
+    }
+
+    .main-banner__btn.button {
+        grid-row-start: 2;
+        grid-column-end: 3;
+        margin: auto 0 14px 9px;
+    }
+
+    .main-banner__label {
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-banner__inner-container {
         margin-top: auto;
