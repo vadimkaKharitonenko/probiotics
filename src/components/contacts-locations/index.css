@@ -52,6 +52,35 @@
     margin-top: 28px;
 }
 
+#map canvas {
+    filter: grayscale(1);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    #map {
+        width: 950px;
+        height: 250px;
+        margin: 0 auto 60px;
+    }
+
+    .contacts-locations {
+        margin-top: 65px;
+        margin-bottom: 52px;
+    }
+
+    .contacts-location__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .description-text.contacts-location__description {
+        width: 82%;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .contacts-locations {
         grid-template-columns: 1fr;
