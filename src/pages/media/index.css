@@ -53,6 +53,44 @@
     letter-spacing: 1.8px;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .media__header {
+        margin-bottom: 32px;
+    }
+
+    .media__content {
+        width: 785px;
+        margin-top: 68px;
+    }
+
+    .media__content .description-text {
+        line-height: 24px;
+    }
+
+    .media__title.heading {
+        margin-bottom: 26px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .media__description .description-text:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .media__description {
+        margin-bottom: 47px;
+    }
+
+    .media__content .photo-slider {
+        margin-bottom: 44px;
+    }
+
+    .media__back .arrow-button {
+        width: 34px;
+        height: 34px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .media__content.container-sm {
         width: calc(100% - 44px);

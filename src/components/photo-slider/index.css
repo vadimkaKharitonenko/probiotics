@@ -32,6 +32,16 @@
     background-color: #f2f6fa;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .photo-slider .slide__img {
+        height: 435px;
+    }
+
+    .photo-slider .slide__description {
+        height: 110px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .photo-slider .slide__img {
         width: 100%;
