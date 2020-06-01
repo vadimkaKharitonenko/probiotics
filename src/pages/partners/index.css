@@ -16,6 +16,25 @@
     display: none;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .partners__title.heading {
+        margin-top: 26px;
+        margin-bottom: 0;
+        font-size: 32px;
+        line-height: 66px;
+    }
+
+    .partners__subtitle.heading {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 37px;
+    }
+
+    .partners__items {
+        width: 94%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container-sm {
         width: 100%;
