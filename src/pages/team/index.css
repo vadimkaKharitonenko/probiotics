@@ -89,6 +89,77 @@
     border: 1px solid rgba(255, 255, 255, .3);
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .team__title.heading {
+        margin: 26px 0 11px 119px;
+        font-size: 32px;
+        line-height: 66px;
+    }
+
+    .teammates {
+        width: 950px;
+    }
+
+    .teammate.big {
+        width: 100%;
+        margin-bottom: 23px;
+    }
+
+    .teammate.big .teammate__description {
+        margin-left: 36px;
+    }
+
+    .teammate.big .teammate__img {
+        margin-right: -35px;
+    }
+
+    .teammate.big .teammate__content .hightlighted-text {
+        width: 100%;
+        margin: 54px 0 14px 37px;
+    }
+
+    .teammate.big .teammate__position,
+    .teammate.big .teammate__name,
+    .teammate__description {
+        margin-left: 36px;
+    }
+
+    .teammate {
+        width: 300px;
+        padding: 20px 27px 30px;
+    }
+
+    .teammate .teammate__img {
+        margin-bottom: 26px;
+    }
+
+    .teammate__description {
+        margin-left: 0;
+    }
+
+    .teammate__position {
+        margin: 11px 0 16px;
+    }
+
+    .teammates .column .teammate {
+        margin: 0 0 30px;
+    }
+
+    .teammates .column {
+        width: 300px;
+    }
+
+    .teammate .hightlighted-text {
+        margin-bottom: 14px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .teammates__columns {
+        margin-bottom: 50px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .team__title.heading {
         margin: 41px 20px 17px;
