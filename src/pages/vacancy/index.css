@@ -57,7 +57,7 @@
   background-color: #0e7dd5;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
   .vacancy-page .container-sm {
     width: 790px;
   }
@@ -101,7 +101,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
   .vacancy-page__title.heading {
     width: calc(100% - 44px);
     margin: 36px 22px 26px;
