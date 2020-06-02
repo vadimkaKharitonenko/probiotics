@@ -56,6 +56,39 @@
   margin-right: 52px;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .vacancies-page .container {
+    width: 960px;
+  }
+
+  .vacancies-page .container-sm {
+    width: 790px;
+  }
+
+  .vacancies__title.heading {
+    margin: 24px 0 3px;
+    font-size: 32px;
+    line-height: 66px;
+  }
+
+  .vacancies__subtitle.heading {
+    margin-bottom: 46px;
+    font-size: 18px;
+  }
+
+  .vacancies__items {
+    margin-bottom: 52px;
+  }
+
+  .vacancies__items .vacancy {
+    width: 300px;
+    height: 112px;
+    font-size: 16px;
+    padding-right: 0;
+    line-height: 24px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .vacancies__title.heading {
     margin: 34px 22px 23px;
