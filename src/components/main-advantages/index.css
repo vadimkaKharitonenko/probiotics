@@ -77,7 +77,7 @@
     padding: 0;
 }
 
-@media screen and (max-width: 1170px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
     .main-advantages__inner-container {
         width: 785px;
         margin-top: 127px;
@@ -124,9 +124,21 @@
     .main-advantages .advantage:last-child .advantage__description {
         margin-left: 20px;
     }
+
+    .main-advantages .advantage__title {
+        width: 400px;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
+    .main-advantages .advantage__title {
+        width: 80%;
+    }
+
+    .main-advantages .advantage {
+        width: 100%;
+    }
+
     .main-advantages {
         justify-content: flex-start;
         height: max-content;

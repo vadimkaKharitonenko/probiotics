@@ -97,7 +97,7 @@ $(function () {
     $(document).delegate('.js-main-indicator .main-indicator__dot',
       'click', setMainSlide);
 
-    if (document.documentElement.clientWidth >= 768) {
+    if (document.documentElement.clientWidth >= 980) {
       document.addEventListener('mousewheel', handler, {passive: false});
       document.addEventListener('DOMMouseScroll', handler, {passive: false});
     }

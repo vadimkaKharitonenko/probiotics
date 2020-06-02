@@ -43,9 +43,10 @@
     letter-spacing: 1.8px;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
     .main-expert {
-        background-position: 10px 19px;
+        background-position: 50%;
+        background-repeat: no-repeat;
     }
 
     .main-expert__inner-container {
@@ -78,7 +79,11 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
+    .main-expert__hightlighted-text {
+        width: 83%;
+    }
+
     .main-expert {
         justify-content: flex-start;
         height: 745px;

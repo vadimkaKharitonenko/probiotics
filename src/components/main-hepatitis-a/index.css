@@ -86,7 +86,7 @@
     padding: 0;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 960px) {
     .main-hepatitis-a__inner-container {
         width: 816px;
         margin-bottom: 0;
@@ -109,9 +109,13 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
     .main-hepatitis-a {
         height: max-content;
+    }
+
+    .main-hepatitis-a__title.heading {
+        width: 100%;
     }
 
     .main-hepatitis-a__move-1 {

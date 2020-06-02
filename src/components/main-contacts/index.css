@@ -78,7 +78,7 @@
     filter: grayscale(1);
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
     .main-contacts__title.heading.-level-1 {
         margin: 74px 0 0 117px;
         font-size: 40px;
@@ -116,7 +116,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
     .main-contacts {
         height: max-content;
     }

@@ -5,10 +5,20 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 $(function() {
-    $('.js-main-news-slider').slick({
+    const settings = {
         slidesToShow: 4,
+        centerPadding: '60px'
+    }
+
+    if (document.documentElement.clientWidth <= 1240) {
+        settings.slidesToShow = 2;
+        settings.centerPadding = '0px';
+    }
+
+    $('.js-main-news-slider').slick({
+        slidesToShow: settings.slidesToShow,
         slidesToScroll: 1,
-        centerPadding: '60px',
+        centerPadding: settings.centerPadding,
         responsive: [
             {
               breakpoint: 1500,
@@ -18,16 +28,23 @@ $(function() {
               }
             },
             {
-                breakpoint: 1200,
+                breakpoint: 1240,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 769,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 }
             }

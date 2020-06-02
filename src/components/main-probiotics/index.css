@@ -96,7 +96,7 @@
     margin-top: 38px;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 960px) {
     .main-probiotics__inner-container {
         width: 816px;
         margin-top: 58px;
@@ -123,7 +123,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
     .main-probiotics {
         height: max-content;
     }
@@ -152,6 +152,7 @@
     }
 
     .main-probiotics__description {
+        width: 80%;
         margin-left: 22px;
         margin-bottom: 38px;
     }
