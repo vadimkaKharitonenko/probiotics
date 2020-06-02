@@ -63,7 +63,7 @@
   color: #0e7dd5;
 }
 
-@media screen and (max-width: 1170px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
   .achivements__title.heading {
     margin-bottom: 12px;
     font-size: 32px;
@@ -93,7 +93,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
   .achivements__title.heading {
     margin-bottom: 20px;
     font-size: 22px;

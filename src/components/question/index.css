@@ -193,7 +193,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
     .question {
         width: 950px;
         margin-bottom: 56px;
@@ -212,7 +212,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 989px) {
     .question__popup-fields {
         grid-template-columns: 1fr;
         grid-row-gap: 14px;
@@ -257,9 +257,7 @@
     .question__popup-close {
         right: 24px;
     }
-}
 
-@media screen and (max-width: 768px) {
     .question {
         width: calc(100% - 44px);
         height: 374px;

@@ -57,7 +57,7 @@
     color: #0e7dd5;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
     .news__title {
         margin: 50px 0 0;
     }
@@ -74,7 +74,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
     .news__content {
         width: 100%;
     }

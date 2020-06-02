@@ -89,7 +89,7 @@
     border: 1px solid rgba(255, 255, 255, .3);
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
     .team__title.heading {
         margin: 26px 0 11px 119px;
         font-size: 32px;
@@ -160,7 +160,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
     .team__title.heading {
         margin: 41px 20px 17px;
         font-size: 22px;

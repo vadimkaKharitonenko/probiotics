@@ -51,7 +51,7 @@
   color: #0e7dd5;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
   .reviews-page {
     width: 790px;
     margin-top: 27px;
@@ -81,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
   .reviews-page {
     width: 100%;
     margin: 27px 0 42px;

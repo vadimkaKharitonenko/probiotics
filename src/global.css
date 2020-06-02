@@ -68,7 +68,7 @@ input[type=number] {
 	-moz-font-feature-settings: 'kern';
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
 	.container {
 		width: 100%;
 	}

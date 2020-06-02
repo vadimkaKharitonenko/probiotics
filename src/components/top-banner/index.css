@@ -62,7 +62,7 @@
   background-color: #0653eb;
 }
 
-@media screen and (max-width: 1170px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
   .top-banner {
     height: 250px;
   }
@@ -88,7 +88,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
   .top-banner {
     height: 281px;
   }

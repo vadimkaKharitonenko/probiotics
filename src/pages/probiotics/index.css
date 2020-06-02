@@ -125,7 +125,7 @@
     margin-bottom: 82px;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
     .probiotics .container-sm {
         width: 790px;
     }
@@ -209,7 +209,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
     .probiotics__title.heading {
         margin: 34px 22px 23px;
         font-size: 22px;

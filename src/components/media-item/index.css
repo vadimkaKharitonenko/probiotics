@@ -33,7 +33,7 @@
     height: 87px;;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 980px) {
     .media-item,
     .media-item__img {
         width: 300px;
@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
     .media-item {
         width: 276px;
     }
