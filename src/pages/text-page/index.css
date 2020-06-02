@@ -171,6 +171,82 @@
   grid-row-gap: 52px;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .text-page {
+    width: 790px;
+    margin-top: 32px;
+  }
+
+  .text-page__title.heading {
+    font-size: 32px;
+    line-height: 66px;
+  }
+
+  .text-page .text {
+    width: 76%;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .text-page__list {
+    width: 600px;
+    margin-top: 0;
+    margin-left: 83px;
+  }
+
+  .text-page__subtitle.heading {
+    font-size: 18px;
+    line-height: 66px;
+  }
+
+  .text-page .photo-slider {
+    margin-bottom: 28px;
+  }
+
+  .text-page .photo-slider .slide__img {
+    width: 707px;
+    height: 452px;
+  }
+
+  .text-page .photo-slider .slide__description {
+    width: 707px;
+    height: 126px;
+    padding: 0 180px 0 42px;
+  }
+
+  .text-page .photo-slider__controls {
+    bottom: 50px;
+    right: 109px;
+  }
+
+  .text-page__quote {
+    margin: 55px 0 60px 82px;
+    padding-left: 52px;
+  }
+
+  .text-page__quote .quote__value {
+    margin-top: -8px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .text-page .accordion {
+    width: 707px;
+  }
+
+  .text-page .accordion-item__header {
+    padding: 15px 10px 12px 19px;
+  }
+
+  .text-page .accordion-item__description {
+    padding: 5px 25px 41px 83px;
+  }
+
+  .text-page .accordion-item__title {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .text-page {
     width: 100%;
