@@ -56,6 +56,41 @@
   padding: 0;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .procurement {
+    width: 790px;
+  }
+
+  .procurement__title.heading {
+    margin-top: 27px;
+    margin-bottom: 7px;
+    font-size: 32px;
+    line-height: 66px;
+  }
+
+  .procurement__info {
+    margin-bottom: 50px;
+    padding: 39px 58px 47px 36px;
+    width: 89.5%;
+  }
+
+  .purchase__date {
+    margin-bottom: 17px;
+  }
+
+  .purchase__description {
+    width: 90%;
+  }
+
+  .procurement__items {
+    grid-row-gap: 45px;
+  }
+
+  .procurement__more .button {
+    margin-right: 83px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .procurement {
     width: 100%;
