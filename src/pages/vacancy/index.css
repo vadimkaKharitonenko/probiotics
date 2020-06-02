@@ -57,6 +57,50 @@
   background-color: #0e7dd5;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .vacancy-page .container-sm {
+    width: 790px;
+  }
+
+  .vacancy-page__title.heading {
+    margin-top: 66px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .vacancy-page .text {
+    width: 77%;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .vacancy-page .description-text {
+    width: 90%;
+  }
+
+  .vacancy-page .lists {
+    margin-top: 18px;
+    margin-bottom: 27px;
+  }
+
+  .vacancy-page .list {
+    margin-left: 0;
+  }
+
+  .vacancy-page .list__title {
+    line-height: 60px;
+  }
+
+  .vacancy-page .list:not(:last-child) {
+    margin-bottom: 27px;
+  }
+
+  .vacancy-form__agreement p {
+    width: 59%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .vacancy-page__title.heading {
     width: calc(100% - 44px);
