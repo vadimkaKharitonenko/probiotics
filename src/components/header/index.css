@@ -181,12 +181,12 @@
     }
 
     .header__search {
-        top: 18px;
+        top: 9px;
         left: 22px;
     }
 
     .header__search input {
-        width: 660px;
+        width: 940px;
     }
 
     .header__logo {
@@ -196,7 +196,7 @@
     .header__main-menu {
         position: relative;
         width: 100%;
-        height: calc(100vh - 65px);
+        height: calc(100vh - 50px);
         grid-template-columns: 1fr;
         overflow-y: auto;
         padding: 38px 28px;
