@@ -49,7 +49,7 @@ $(function() {
     const originals = $('.js-media-popup-photo-originals');
     const thumbnails = $('.js-media-popup-photo-thumbnails');
 
-    const isMobile = document.documentElement.clientWidth <= 768;
+    const isMobile = document.documentElement.clientWidth <= 1024;
 
     if (!originals || !thumbnails) return;
 

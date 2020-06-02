@@ -33,6 +33,31 @@
     height: 87px;;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .media-item,
+    .media-item__img {
+        width: 300px;
+    }
+
+    .media-item__img {
+        height: 150px
+    }
+
+    .media-item__title.heading,
+    .media-item__date {
+        padding: 0;
+    }
+
+    .media-item__play-icon {
+        top: 27px;
+        left: 107px;
+    }
+
+    .media-item__date {
+        padding: 12px 0 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .media-item {
         width: 276px;
