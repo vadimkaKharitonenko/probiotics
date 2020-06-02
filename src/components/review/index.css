@@ -60,6 +60,21 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .review {
+    padding-left: 37px;
+    padding-right: 0;
+  }
+
+  .review__title {
+    margin-bottom: 7px;
+  }
+
+  .review__position {
+    margin-bottom: 14px;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .review {
     grid-template-columns: 1fr;

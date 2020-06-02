@@ -51,6 +51,36 @@
   color: #0e7dd5;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .reviews-page {
+    width: 790px;
+    margin-top: 27px;
+    margin-bottom: 40px;
+  }
+
+  .reviews-page__title.heading {
+    font-size: 32px;
+    line-height: 66px;
+  }
+
+  .reviews-page__tabs {
+    margin-bottom: 16px;
+    line-height: 44px;
+  }
+
+  .reviews-page__tabs a:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  .reviews-page__items {
+    width: 707px;
+  }
+
+  .reviews-page__pagination {
+    margin: 42px auto 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .reviews-page {
     width: 100%;
