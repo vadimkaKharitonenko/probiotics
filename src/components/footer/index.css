@@ -60,7 +60,7 @@
     }
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 767px) {
     .footer {
         height: unset;
     }

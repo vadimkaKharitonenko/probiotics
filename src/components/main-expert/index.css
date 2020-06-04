@@ -43,14 +43,14 @@
     letter-spacing: 1.8px;
 }
 
-@media screen and (max-width: 1240px) and (min-width: 980px) {
+@media screen and (max-width: 1240px) and (min-width: 768px) {
     .main-expert {
         background-position: 50%;
         background-repeat: no-repeat;
     }
 
     .main-expert__inner-container {
-        width: 816px;
+        width: 700px;
         margin-top: 106px;
     }
 
@@ -79,7 +79,7 @@
     }
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 767px) {
     .main-expert__hightlighted-text {
         width: 83%;
     }

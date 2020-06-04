@@ -44,7 +44,7 @@
     width: 109px;
 }
 
-@media screen and (max-width: 1240px) and (min-width: 980px) {
+@media screen and (max-width: 1240px) and (min-width: 768px) {
     .main-news__header {
         margin: 57px 0 14px 13px;
     }
@@ -64,7 +64,7 @@
     }
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 767px) {
     .main-news,
     .main-news__inner-container {
         height: max-content;

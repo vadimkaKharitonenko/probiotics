@@ -89,7 +89,7 @@
     border: 1px solid rgba(255, 255, 255, .3);
 }
 
-@media screen and (max-width: 1240px) and (min-width: 980px) {
+@media screen and (max-width: 1240px) and (min-width: 768px) {
     .team__title.heading {
         margin: 26px 0 11px 119px;
         font-size: 32px;
@@ -97,7 +97,7 @@
     }
 
     .teammates {
-        width: 950px;
+        width: 700px;
     }
 
     .teammate.big {
@@ -156,11 +156,13 @@
     }
 
     .teammates__columns {
+        flex-wrap: wrap;
+        width: 700px;
         margin-bottom: 50px;
     }
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 767px) {
     .team__title.heading {
         margin: 41px 20px 17px;
         font-size: 22px;

@@ -78,9 +78,9 @@
     filter: grayscale(1);
 }
 
-@media screen and (max-width: 1240px) and (min-width: 980px) {
+@media screen and (max-width: 1240px) and (min-width: 768px) {
     .main-contacts__title.heading.-level-1 {
-        margin: 74px 0 0 117px;
+        margin: 74px 0 0 80px;
         font-size: 40px;
         line-height: 90px;
     }
@@ -96,7 +96,7 @@
     }
 
     .main-contacts__content {
-        width: 874px;
+        width: 700px;
         margin: 0 auto;
     }
 
@@ -116,7 +116,7 @@
     }
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 767px) {
     .main-contacts {
         height: max-content;
     }

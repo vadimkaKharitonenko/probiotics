@@ -56,13 +56,13 @@
   margin-right: 52px;
 }
 
-@media screen and (max-width: 1240px) and (min-width: 980px) {
+@media screen and (max-width: 1240px) and (min-width: 768px) {
   .vacancies-page .container {
-    width: 960px;
+    width: 700px;
   }
 
   .vacancies-page .container-sm {
-    width: 790px;
+    width: 700px;
   }
 
   .vacancies__title.heading {
@@ -77,7 +77,16 @@
   }
 
   .vacancies__items {
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 52px;
+  }
+
+  .vacancies__tip .tip__content img {
+    margin-left: 36px;
+  }
+
+  .vacancies__tip .tip__content .tip__text {
+    width: 65%;
   }
 
   .vacancies__items .vacancy {
@@ -89,7 +98,7 @@
   }
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 767px) {
   .vacancies__title.heading {
     margin: 34px 22px 23px;
     font-size: 22px;

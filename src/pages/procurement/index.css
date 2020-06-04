@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .procurement {
-    width: 790px;
+    width: 700px;
   }
 
   .procurement__title.heading {
@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .procurement {
     width: 100%;
   }

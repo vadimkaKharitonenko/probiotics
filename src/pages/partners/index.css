@@ -17,6 +17,10 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+    .partners__header.container-sm {
+        width: 90%;
+    }
+
     .partners__title.heading {
         margin-top: 26px;
         margin-bottom: 0;
@@ -31,11 +35,16 @@
     }
 
     .partners__items {
+        grid-template-columns: repeat(3, 1fr);
         width: 94%;
+    }
+
+    .partner-item__description {
+        width: 90%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .container-sm {
         width: 100%;
     }

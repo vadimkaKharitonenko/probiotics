@@ -63,7 +63,7 @@
   color: #0e7dd5;
 }
 
-@media screen and (max-width: 1240px) and (min-width: 980px) {
+@media screen and (max-width: 1240px) and (min-width: 768px) {
   .achivements__title.heading {
     margin-bottom: 12px;
     font-size: 32px;
@@ -80,7 +80,7 @@
   }
 
   .achivements__items {
-    width: 948px;
+    width: 700px;
     margin: 0 auto;
   }
 
@@ -93,7 +93,7 @@
   }
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 767px) {
   .achivements__title.heading {
     margin-bottom: 20px;
     font-size: 22px;

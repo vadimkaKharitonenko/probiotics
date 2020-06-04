@@ -125,9 +125,9 @@
     margin-bottom: 82px;
 }
 
-@media screen and (max-width: 1240px) and (min-width: 980px) {
+@media screen and (max-width: 1240px) and (min-width: 768px) {
     .probiotics .container-sm {
-        width: 790px;
+        width: 700px;
     }
 
     .probiotics__title.heading {
@@ -172,12 +172,12 @@
     .probiotics .photo-slider .slide__description {
         width: 707px;
         height: 130px;
-        padding: 0 173px 0 44px
+        padding: 22px 173px 0 44px
     }
 
     .probiotics .photo-slider__controls {
         bottom: 48px;
-        right: 109px;
+        right: 32px;
     }
 
     .probiotics .photo-slider {
@@ -207,9 +207,13 @@
     .probiotics .accordion-item__header {
         padding: 15px 11px 10px 18px;
     }
+
+    .probiotics__documents {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 767px) {
     .probiotics__title.heading {
         margin: 34px 22px 23px;
         font-size: 22px;

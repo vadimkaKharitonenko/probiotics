@@ -19,6 +19,14 @@ $(function () {
       iconImageOffset: [-3, -42]
     });
 
+    const placemark2 = new ymaps.Placemark([56.76, 37.56], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: require('../../assets/img/placemark.png'),
+      iconImageSize: [35, 44],
+      iconImageOffset: [-3, -42]
+    });
+
     map.geoObjects.add(placemark);
+    map.geoObjects.add(placemark2);
   }
 });

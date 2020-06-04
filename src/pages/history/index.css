@@ -35,13 +35,13 @@
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .history__title.heading {
-    margin: 27px 0 41px;
+    margin: 27px 22px 41px;
     font-size: 32px;
     line-height: 66px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .history__title.heading {
     margin: 33px 22px 29px;
     font-size: 22px;

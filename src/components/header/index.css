@@ -169,6 +169,7 @@
     .header__menu-btn img {
         width: 18px;
         height: 18px;
+        margin: 0 auto;
     }
 
     .header__logo img {
@@ -227,6 +228,12 @@
     .header__main-menu .socials .socials__link {
         width: 63px;
         height: 63px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__search input {
+        width: 683px;
     }
 }
 

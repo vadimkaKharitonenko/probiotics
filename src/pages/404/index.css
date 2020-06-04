@@ -44,7 +44,7 @@
 
     .page-404__title {
         width: max-content;
-        padding-top: 297px;
+        padding-top: 340px;
         font-size: 34px;
         line-height: 56px;
     }
@@ -55,7 +55,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .page-404 {
         min-height: calc(100vh - 160px);
         background-size: 281px 149px;

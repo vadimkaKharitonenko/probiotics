@@ -171,9 +171,9 @@
   grid-row-gap: 52px;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1240px) and (min-width: 768px) {
   .text-page {
-    width: 790px;
+    width: 700px;
     margin-top: 32px;
   }
 
@@ -211,16 +211,16 @@
   .text-page .photo-slider .slide__description {
     width: 707px;
     height: 126px;
-    padding: 0 180px 0 42px;
+    padding: 22px 180px 0 42px;
   }
 
   .text-page .photo-slider__controls {
     bottom: 50px;
-    right: 109px;
+    right: 32px;
   }
 
   .text-page__quote {
-    margin: 55px 0 60px 82px;
+    margin: 55px 0 60px 32px;
     padding-left: 52px;
   }
 
@@ -245,9 +245,13 @@
   .text-page .accordion-item__title {
     font-size: 16px;
   }
+
+  .text-page__documents {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .text-page {
     width: 100%;
     margin-top: 35px;
