@@ -114,6 +114,7 @@
 
 .history-slider__description-slide::before {
   content: '';
+  display: none;
   position: absolute;
   bottom: 52px;
   left: -51px;

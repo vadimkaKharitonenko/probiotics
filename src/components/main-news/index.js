@@ -7,7 +7,8 @@ import 'slick-carousel/slick/slick-theme.css'
 $(function() {
     const settings = {
         slidesToShow: 4,
-        centerPadding: '60px'
+        centerPadding: '60px',
+        swipeToSlide: true,
     }
 
     if (document.documentElement.clientWidth <= 1240) {
@@ -16,8 +17,8 @@ $(function() {
     }
 
     $('.js-main-news-slider').slick({
+        swipeToSlide: settings.swipeToSlide,
         slidesToShow: settings.slidesToShow,
-        slidesToScroll: 1,
         centerPadding: settings.centerPadding,
         responsive: [
             {
