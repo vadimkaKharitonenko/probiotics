@@ -108,6 +108,12 @@
     resize: none;
 }
 
+.question__popup-fields .textarea.error {
+    color: #ed3325;
+    border-color: #f05640;
+}
+
+
 .question__popup-fields .textarea:focus {
     border-color: #a9c1e9;
 }

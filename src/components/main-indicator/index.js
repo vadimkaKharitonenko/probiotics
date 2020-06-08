@@ -101,15 +101,13 @@ $(function () {
       document.addEventListener('mousewheel', handler, {passive: false});
       document.addEventListener('DOMMouseScroll', handler, {passive: false});
       document.addEventListener('keydown', function(e) {
-        let keynum;
-
-        if (window.event){ // IE
-          keynum = e.keyCode;
-        } else
-        if (e.which) { // Netscape/Firefox/Opera
-          keynum = e.which;
+        if (e.which === 35) {
+          window.scrollTo(0, document.body.scrollHeight);
         }
-        console.log(String.fromCharCode(keynum));
+
+        if (e.which === 36) {
+          window.scrollTo(0, 0);
+        }
       });
     }
   }
