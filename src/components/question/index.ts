@@ -29,6 +29,7 @@ $(function() {
     const fieldsContainer = $(button).closest('.question__popup').find('.question__popup-fields');
     const inputs = $(fieldsContainer).find('input');
     const textarea = $(fieldsContainer).find('textarea');
+    const agreement = $(button).next().find('input').prop('checked');
     const validation = {
       errors: 0,
     };
@@ -42,6 +43,10 @@ $(function() {
     if ($(textarea).val() === '') {
       validation.errors++;
       $(textarea).addClass('error');
+    }
+
+    if (!agreement) {
+      validation.errors++;
     }
 
     return !(validation.errors > 0);
