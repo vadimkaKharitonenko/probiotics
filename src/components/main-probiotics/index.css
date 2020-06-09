@@ -96,6 +96,12 @@
     margin-top: 38px;
 }
 
+@media screen and (max-width: 1366px) {
+    .main-probiotics__move-2 {
+        left: -500px;
+    }
+}
+
 @media screen and (max-width: 1240px) and (min-width: 768px) {
     .main-probiotics__inner-container {
         width: 700px;
@@ -170,5 +176,25 @@
 @media screen and (max-width: 414px) {
     .main-probiotics__description {
         width: calc(100% - 44px);
+    }
+}
+
+/* for long screen */
+
+@media screen and (min-height: 1081px) {
+    .main-probiotics__inner-container {
+        width: 700px;
+        margin-bottom: 30px;
+    }
+
+    .main-probiotics__label,
+    .main-probiotics__title.heading,
+    .main-probiotics__description,
+    .main-probiotics__btn.button {
+        margin-left: 0;
+    }
+
+    .main-probiotics {
+        height: max-content;
     }
 }

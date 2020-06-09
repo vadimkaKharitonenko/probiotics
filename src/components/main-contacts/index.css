@@ -160,3 +160,32 @@
         margin-bottom: 61px;
     }
 }
+
+/* for long screen */
+
+@media screen and (min-height: 1081px) {
+    .main-contacts {
+        height: max-content;
+    }
+
+    .main-contacts__inner-contacts {
+        width: 700px;
+        height: unset;
+    }
+
+    .main-contacts__content {
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    #contactsMap {
+        width: 100%;
+        margin-bottom: 42px;
+    }
+
+    .main-contacts__info,
+    .main-contacts__title.heading.-level-1,
+    #contactsMap {
+        margin-left: 0;
+    }
+}

@@ -93,3 +93,11 @@
         margin-left: 0;
     }
 }
+
+/* for long screen */
+
+@media screen and (min-height: 1081px) {
+    .main-news {
+        height: max-content;
+    }
+}

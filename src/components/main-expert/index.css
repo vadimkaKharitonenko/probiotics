@@ -129,3 +129,26 @@
         width: calc(100% - 44px);
     }
 }
+
+/* for long screen */
+
+@media screen and (min-height: 1081px) {
+    .main-expert {
+        height: max-content;
+    }
+
+    .main-expert__inner-container {
+        width: 700px;
+    }
+
+    .main-expert__title,
+    .main-expert__hightlighted-text,
+    .main-expert__name.heading,
+    .main-expert__position {
+        margin-left: 0;
+    }
+
+    .main-expert__hightlighted-text {
+        width: 70%;
+    }
+}

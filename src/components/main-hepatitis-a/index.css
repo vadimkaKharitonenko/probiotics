@@ -168,3 +168,22 @@
         width: calc(100% - 44px);
     }
 }
+
+/* for long screen */
+
+@media screen and (min-height: 1081px) {
+    .main-hepatitis-a__inner-container {
+        width: 700px;
+    }
+
+    .main-hepatitis-a__label,
+    .main-hepatitis-a__title.heading,
+    .main-hepatitis-a__description,
+    .main-hepatitis-a__btn.button {
+        margin-left: 0;
+    }
+
+    .main-hepatitis-a {
+        height: max-content;
+    }
+}

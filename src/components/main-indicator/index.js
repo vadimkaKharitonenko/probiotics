@@ -65,12 +65,16 @@ function scrollToSlide(index) {
 }
 
 function handler(e) {
+  if (window.screen.height > 1080) {
+    return document.body.style.overflow = 'unset';
+  }
+
   if (scrollIsBlocked) {
     e.preventDefault();
     document.body.style.overflow = 'hidden';
     return;
   }
-  if (document.documentElement.clientWidth <= 768) return;
+  if (document.documentElement.clientWidth <= 768 || window.screen.height > 1080) return;
   scrollIsBlocked = true;
 
   const slides = document.querySelector('#main-sections');
@@ -97,7 +101,7 @@ $(function () {
     $(document).delegate('.js-main-indicator .main-indicator__dot',
       'click', setMainSlide);
 
-    if (document.documentElement.clientWidth >= 980) {
+    if (document.documentElement.clientWidth >= 980 && window.screen.height <= 1080) {
       document.addEventListener('mousewheel', handler, {passive: false});
       document.addEventListener('DOMMouseScroll', handler, {passive: false});
       document.addEventListener('keydown', function(e) {

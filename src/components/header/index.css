@@ -260,3 +260,9 @@
         width: 220px;
     }
 }
+
+@media screen and (min-height: 1081px) {
+    .header__main-menu {
+        grid-template-rows: max-content;
+    }
+}

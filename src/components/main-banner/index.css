@@ -115,3 +115,24 @@
         width: calc(100% - 44px);
     }
 }
+
+/* for long screen */
+
+@media screen and (min-height: 1081px) {
+    .main-banner__inner-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 700px;
+        margin-top: 170px;
+    }
+
+    .main-banner__title.heading {
+        width: 100%;
+    }
+
+    .main-banner__title.heading,
+    .main-banner__label,
+    .main-banner__btn.button {
+        margin-left: 0;
+    }
+}
