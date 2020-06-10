@@ -1,7 +1,7 @@
 mixin main-hepatitis-a(className)
-  section(class=`main-hepatitis-a section ${className ? className : ''}`)
-    img(src=require('../../assets/img/screen3-2.png')).main-hepatitis-a__move-1
-    img(src=require('../../assets/img/screen3-1.png')).main-hepatitis-a__move-2
+  section(class=`main-hepatitis-a lazyload section ${className ? className : ''}` data-bg=require('../../assets/img/third-screen-bg-static.png'))
+    img(src=require('../../assets/img/screen3-2.png') data-src=require('../../assets/img/screen3-2.png')).main-hepatitis-a__move-1.lazyload
+    img(src=require('../../assets/img/screen3-1.png') data-src=require('../../assets/img/screen3-1.png')).main-hepatitis-a__move-2.lazyload
     .container.main-hepatitis-a__inner-container
       .main-hepatitis-a__label ЕДИНСТВЕННЫЕ В РОССИИ
       +heading({tag: 'h2', level: 1, className: 'main-hepatitis-a__title fadeInLeft animated delay-1s slow'})

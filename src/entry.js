@@ -1,5 +1,7 @@
 import './global.css';
 import './animate.css';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const scripts = {};
 

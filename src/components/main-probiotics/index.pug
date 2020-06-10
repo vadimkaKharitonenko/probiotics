@@ -1,7 +1,7 @@
 mixin main-probiotics(className)
-  section(class=`main-probiotics section ${className ? className : ''}`)
-    img(src=require('../../assets/img/screen2-2.png')).main-probiotics__move-2
-    img(src=require('../../assets/img/screen2-1.png')).main-probiotics__move
+  section(class=`main-probiotics lazyload section ${className ? className : ''}` data-bg=require('../../assets/img/second-screen-bg-static.png'))
+    img(src=require('../../assets/img/screen2-2.png') data-src=require('../../assets/img/screen2-2.png')).main-probiotics__move-2.lazyload
+    img(src=require('../../assets/img/screen2-1.png') data-src=require('../../assets/img/screen2-1.png')).main-probiotics__move.lazyload
     .container.main-probiotics__inner-container
       .main-probiotics__label ПРОДУКТЫ
       +heading({tag: 'h2', level: 1, className: 'main-probiotics__title fadeInLeft animated delay-1s slow'})

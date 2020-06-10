@@ -45,6 +45,7 @@
     "@types/jquery": "^3.3.33",
     "@types/slick-carousel": "^1.6.34",
     "jquery": "^3.4.1",
+    "lazysizes": "^5.2.2",
     "slick-carousel": "^1.8.1"
   }
 }

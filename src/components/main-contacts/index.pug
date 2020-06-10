@@ -1,5 +1,5 @@
 mixin main-contacts(className)
-  section(class=`main-contacts section ${className ? className : ''}`)
+  section(class=`main-contacts lazyload section ${className ? className : ''}` data-bg=require('../../assets/img/main-contacts.png'))
     .container.main-contacts__inner-contacts
       +heading({tag: 'h2', level: 1, className: 'main-contacts__title fadeInLeft animated delay-1s slow'})
         | Контакты

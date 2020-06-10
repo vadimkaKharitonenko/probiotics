@@ -4,7 +4,7 @@ include ../description-text/index.pug
 
 mixin news-item({img, label, date, title, description})
     article.news-item
-        img(src= img, alt="news").news-item__img
+        img(src= img, alt="news").news-item__img.lazyload
         header.news-item__header
             +label({theme: label.theme})
                 a(href="./")= label.text

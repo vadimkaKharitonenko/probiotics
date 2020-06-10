@@ -3,7 +3,7 @@ include ../description-text/index.pug
 include ../button/index.pug
 
 mixin main-advantages(className)
-  section(class=`main-advantages section ${className ? className : ''}`)
+  section(class=`main-advantages lazyload section ${className ? className : ''}` data-bg=require('../../assets/img/main-advantages.png'))
     .container.main-advantages__inner-container
       .advantage
         .advantage__label ЕДИНСТВЕННЫЕ В РОССИИ
