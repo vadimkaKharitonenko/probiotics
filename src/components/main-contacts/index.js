@@ -2,13 +2,7 @@
 import './index.css';
 
 $(function () {
-  $(document).on('scroll', function() {
-    if (document.documentElement.clientHeight - window.pageYOffset < 1000) {
-      if (document.querySelector('#contactsMap').childElementCount === 0) {
-        init();
-      }
-    }
-  });
+  ymaps.ready(init);
 
   function init() {
     const contactsMap = new ymaps.Map('contactsMap', {
