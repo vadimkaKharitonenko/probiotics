@@ -17,6 +17,6 @@ $(function() {
 
   const topBannerMenu = document.querySelector('.top-banner__menu');
 
-  topBannerMenu?.addEventListener("mousewheel", scrollHorizontally, false);
-  topBannerMenu?.addEventListener("DOMMouseScroll", scrollHorizontally, false);
-})
+  topBannerMenu?.addEventListener('mousewheel', scrollHorizontally, false);
+  topBannerMenu?.addEventListener('DOMMouseScroll', scrollHorizontally, false);
+});

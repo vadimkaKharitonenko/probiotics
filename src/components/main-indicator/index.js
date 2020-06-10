@@ -65,16 +65,12 @@ function scrollToSlide(index) {
 }
 
 function handler(e) {
-  if (window.screen.height > 1080) {
-    return document.body.style.overflow = 'unset';
-  }
-
   if (scrollIsBlocked) {
     e.preventDefault();
     document.body.style.overflow = 'hidden';
     return;
   }
-  if (document.documentElement.clientWidth <= 768 || window.screen.height > 1080) return;
+  if (document.documentElement.clientWidth <= 768) return;
   scrollIsBlocked = true;
 
   const slides = document.querySelector('#main-sections');
@@ -85,7 +81,9 @@ function handler(e) {
     (slides.childElementCount - 1);
   const slideIndex = Math.round(document.body.scrollTop / Math.round(slideHeight));
 
-  if (e.wheelDelta >= 0) {
+  const scrollDirection = e.wheelDelta || (-e.detail / 2);
+
+  if (scrollDirection >= 0) {
     scrollToSlide(slideIndex - 1);
   } else {
     scrollToSlide(slideIndex + 1);
@@ -101,7 +99,7 @@ $(function () {
     $(document).delegate('.js-main-indicator .main-indicator__dot',
       'click', setMainSlide);
 
-    if (document.documentElement.clientWidth >= 980 && window.screen.height <= 1080) {
+    if (document.documentElement.clientWidth >= 980) {
       document.addEventListener('mousewheel', handler, {passive: false});
       document.addEventListener('DOMMouseScroll', handler, {passive: false});
       document.addEventListener('keydown', function(e) {

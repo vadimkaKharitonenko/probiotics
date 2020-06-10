@@ -115,7 +115,7 @@
 
 @media screen and (max-width: 767px) {
     .main-hepatitis-a {
-        height: max-content;
+        height: 100vh;
     }
 
     .main-hepatitis-a__title.heading {
@@ -184,6 +184,6 @@
     }
 
     .main-hepatitis-a {
-        height: max-content;
+        height: 100vh;
     }
 }

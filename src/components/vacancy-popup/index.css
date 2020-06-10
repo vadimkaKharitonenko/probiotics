@@ -9,6 +9,7 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(7, 24, 37, .77);
+  overflow-y: auto;
 }
 
 .vacancy-popup.hidden {
@@ -27,6 +28,7 @@
 .vacancy-popup__content {
   position: relative;
   width: 770px;
+  margin-top: 200px;
   padding: 55px 100px 48px;
   background-color: #ffffff;
 }
@@ -63,6 +65,10 @@
   font-weight: 400;
   border: 1px solid #d6dee8;
   resize: none;
+}
+
+.vacancy-popup__fields .comment.error {
+  border-color: #ed3325;
 }
 
 .vacancy-popup__fields .comment:focus {

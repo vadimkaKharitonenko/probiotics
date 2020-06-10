@@ -165,7 +165,7 @@
 
 @media screen and (min-height: 1081px) {
     .main-contacts {
-        height: max-content;
+        height: 100vh;
     }
 
     .main-contacts__inner-contacts {
