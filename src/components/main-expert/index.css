@@ -134,7 +134,7 @@
 
 @media screen and (min-height: 1081px) {
     .main-expert {
-        height: max-content;
+        height: 100vh;
     }
 
     .main-expert__inner-container {

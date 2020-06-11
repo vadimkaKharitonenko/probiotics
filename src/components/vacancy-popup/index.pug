@@ -16,7 +16,7 @@ mixin vacancy-popup()
           span Файл не выбран
         textarea(placeholder='Ваш комментарий').comment
       .vacancy-popup__footer
-        +button({theme: 'blue', className: 'vacancy-popup__submit'})
+        +button({theme: 'blue', className: 'vacancy-popup__submit js-vacancy-popup-submit'})
           | Отправить
         label.vacancy-popup__agreement
           input(type='checkbox' checked)

@@ -191,7 +191,7 @@
 
 @media screen and (min-height: 1081px) {
     .main-advantages {
-        height: max-content;
+        height: 100vh;
     }
 
     .main-advantages__inner-container {

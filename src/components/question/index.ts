@@ -1,11 +1,14 @@
 import './index.css';
+import $ from "jquery";
 
 $(function() {
   $(document).delegate('.js-question-submit', 'click', function() {
+    $('body').css('overflow-y', 'hidden');
     $(document).find('.js-question-popup-container').removeClass('hidden');
   });
 
   $(document).delegate('.js-question-popup-close', 'click', function() {
+    $('body').css('overflow-y', 'auto');
     $(document).find('.js-question-popup-container').addClass('hidden');
     $(document).find('.js-question-popup-success').addClass('hidden');
   });
