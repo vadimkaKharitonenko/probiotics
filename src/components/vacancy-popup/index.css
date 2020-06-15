@@ -166,6 +166,7 @@
   .vacancy-popup__content {
     width: 100%;
     padding: 33px 22px 38px;
+    margin-top: 0;
   }
 
   .vacancy-popup__fields {
