@@ -56,7 +56,7 @@
     position: relative;
     width: 770px;
     height: 550px;
-    margin-top: 400px;
+    margin-top: 100px;
     padding: 64px 99px 59px;
     background-color: #ffffff;
 }
@@ -294,5 +294,17 @@
 
     .question__submit.button {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .question__popup {
+        margin-top: 400px;
+    }
+}
+
+@media screen and (max-width: 989px) {
+    .question__popup {
+        margin-top: 100px;
     }
 }

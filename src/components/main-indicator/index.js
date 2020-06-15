@@ -91,7 +91,7 @@ function handler(e) {
 
   setTimeout(() => {
     scrollIsBlocked = false;
-  }, 1500);
+  }, 500);
 }
 
 $(function () {
