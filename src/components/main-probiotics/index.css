@@ -139,6 +139,12 @@
         height: 100vh;
     }
 
+    .main-probiotics__move-2 {
+        left: -20%;
+        height: 100%;
+        width: unset;
+    }
+
     .main-probiotics__move {
         height: 100vh;
         min-height: unset;

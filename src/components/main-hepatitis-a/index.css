@@ -123,12 +123,14 @@
     }
 
     .main-hepatitis-a__move-1 {
-        top: -50%;
-        left: 80%;
+        top: -30%;
+        left: 0;
+        width: 320px;
     }
 
     .main-hepatitis-a__move-2 {
-        display: none;
+        right: -70%;
+        width: 500px;
     }
 
     .main-hepatitis-a__label {
@@ -166,6 +168,11 @@
 
     .main-hepatitis-a__description {
         width: calc(100% - 44px);
+    }
+
+    .main-hepatitis-a__move-2 {
+        right: -70%;
+        width: 400px;
     }
 }
 
