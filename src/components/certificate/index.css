@@ -6,7 +6,7 @@
 .certificate__img {
     width: max-content;
     margin-bottom: 29px;
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 .certificate__title {

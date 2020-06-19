@@ -14,6 +14,12 @@ $(function() {
   });
 
   $(document).delegate('.js-certificate-popup', 'click', removeCertificatePopup);
+  $(document).delegate('.certificate-popup', 'click', removeCertificatePopup);
+
+  $(document).on('keydown', function(e) {
+    if (e.key !== 'Escape') return;
+    $('.certificate-popup').remove();
+  });
 
   function removeCertificatePopup() {
     $(this).closest('.certificate-popup').remove();

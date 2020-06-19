@@ -9,7 +9,7 @@ type Photos = {
 
 $(function() {
   const createVideoPopup = (video: string) => 
-    document.body.insertAdjacentHTML(`beforeend`, `
+    document.body.insertAdjacentHTML('beforeend', `
     <section class="media-popup-video">
       <div class="media-popup-video__content">
         <button class="media-popup-video__close js-media-popup-video-close">
@@ -21,7 +21,7 @@ $(function() {
   `);
 
   const createPhotoPopup = (photos: Photos) =>  
-    document.body.insertAdjacentHTML(`beforeend`, `
+    document.body.insertAdjacentHTML('beforeend', `
     <section class="media-popup-photo">
       <div class="media-popup-photo__content">
         <button class="media-popup-photo__close js-media-popup-photo-close">
@@ -87,7 +87,7 @@ $(function() {
         centerPadding: '186px'
       });
     }
-  }
+  };
 
   $(document).delegate('.js-media-popup-photo-close', 'click', function() {
     $(this).closest('.media-popup-photo').remove();
@@ -115,5 +115,27 @@ $(function() {
 
   $(document).delegate('.js-media-popup-video-close', 'click', function() {
     $(this).closest('.media-popup-video').remove();
+  });
+
+  $(document).on('keydown', function(e) {
+    if (e.key !== 'Escape') return;
+    $('.media-popup-video').remove();
+    $('.media-popup-photo').remove();
+  });
+
+  $(document).mouseup(function (e: any){
+    const div = $('.media-popup-video__content');
+    if (!div.is(e.target)
+      && div.has(e.target).length === 0) {
+      $(div).closest('.media-popup-video').remove();
+    }
+  });
+
+  $(document).mouseup(function (e: any){
+    const div = $('.media-popup-photo__content');
+    if (!div.is(e.target)
+      && div.has(e.target).length === 0) {
+      $(div).closest('.media-popup-photo').remove();
+    }
   });
 });
