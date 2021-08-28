@@ -1,0 +1,33 @@
+.text-page__text-block a {
+  color: #e21c2a;
+}
+
+.text-page figure {
+  margin: 70px 0 80px;
+}
+
+.text-page figure img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.text-page figcaption {
+  margin: 25px auto 0;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .text-page figure {
+    margin: 40px 0 50px;
+  }
+
+  .text-page figure img,
+  .text-page figcaption {
+    width: calc(100% - 44px); 
+  }
+}
+
+@media screen and (max-width: 475px) {
+  
+}

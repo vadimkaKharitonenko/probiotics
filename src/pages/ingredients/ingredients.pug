@@ -1,0 +1,147 @@
+include ../../components/header/index.pug
+include ../../components/top-banner/index.pug
+include ../../components/heading/index.pug
+include ../../components/menu-link/index.pug
+include ../../components/question/index.pug
+include ../../components/footer/index.pug
+include ../../components/description-text/index.pug
+include ../../components/photo-slider/index.pug
+include ../../components/hightlighted-text/index.pug
+include ../../components/accordion/index.pug
+include ../../components/link/index.pug
+include ../../components/partner-logo/index.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Ингредиенты
+  body
+    +header({
+      menu: [
+        {
+          text: 'Пробиотики',
+          href: './',
+          active: true
+        },
+        {
+          text: 'Вакцина Гепатита А',
+          href: './',
+          active: false
+        },
+        {
+          text: 'Ингредиенты',
+          href: './',
+          active: false
+        },
+        {
+          text: 'Контрактное производство',
+          href: './',
+          active: false
+        }
+      ]
+    })
+    +top-banner({
+      img: require('../../assets/img/team-bg.png'),
+      items: [
+        {
+          text: 'Главная',
+          link: './'
+        },
+        {
+          text: 'Ингредиенты',
+          link: './'
+        },
+      ],
+      title: 'Ингредиенты',
+      menu: [
+        {
+          text: 'Закваски для молочных заводов',
+          link: './',
+          active: true
+        },
+        {
+          text: 'Биомасса пробиотических бактерий',
+          link: './'
+        },
+        {
+          text: 'ЛИЗАТЫ',
+          link: './',
+        },
+      ],
+      hidden: true
+    })
+    main
+      .text-page
+        +heading({tag: 'h1', className: 'text-page__title', level: 1})
+          | Заголовок 1
+
+        +heading({tag: 'h2', className: 'text-page__title', level: 2})
+          | Заголовок 2
+
+        +description-text({className: ''})
+          | Мы рады сотрудничать с дилерами по продаже нашей продукции в Новосибирске, Кемерово, Барнауле, Томске, Нижневартовске и других городах Сибири и России.
+
+        figure
+          +heading({tag: 'h3', className: 'text-page__title', level: 3})
+            | Заголовок 3
+          img(src= require('../../assets/img/probiotics-photo-slide.png'), alt="Slide")
+          figcaption= 'Описание к фотографии'
+
+        .text-page__quote
+          +hightlighted-text({className: 'quote__value'})
+            | Закваски соответствуют требованиям Федерального закона Федеральный закон «Технический регламент на молоко и молочную продукцию» от 12.06.2008 N 88-ФЗ и Единым санитарно-эпидемиологическим требованиям к продукции (товарам), подлежащим санитарно-эпидемиологическому надзору
+
+        +heading({tag: 'h4', className: 'text-page__subtitle', level: 4})
+          | Заголовок 4
+
+        +description-text({className: ''})
+          | 1. Пробиотики предназначены<br/>
+          | 2. Наиболее частые и известные причины дисбактериоза<br/>
+          | 3. Лабораторность художественной культуры имеет классический реализм<br/>
+          | 4. В комплексной терапии кишечных инфекций<br/>
+
+        .text-page__text-block
+          +description-text({className: ''})
+            a(href="/")= 'АО «Вектор-БиАльгам» '
+            | выпускает комплекс пробиотиков с бифидо- и лактобактериями: 
+            | «Экофлор» (препарат включает в себя мощный энтеросорбент), «Трилакт» и «Бифидум БАГ» 
+            | (содержат жидкие бифидо- и лактобактерии), капсулированные пробиотики серии 
+            | "Пробиофлор", а также биопродукт «НариЛак-Форте-В». Эти пробиотические препараты
+            | могут использоваться в разных областях медицины для профилактики и комплексного 
+            | лечения многих заболеваний.
+
+        +heading({tag: 'h3', className: 'text-page__subtitle', level: 3})
+          | Таблица
+
+        .text-page__table
+          .table
+            .head.row
+              .th Наименование 1
+              .th Наименование 2
+              .th Наименование 3
+              .th Наименование 4
+            .row
+              .td Наименование 1
+              .td Наименование 2
+              .td Наименование 3
+              .td Наименование 4
+            .row
+              .td Наименование 1
+              .td Наименование 2
+              .td Наименование 3
+              .td Наименование 4
+            .row
+              .td Наименование 1
+              .td Наименование 2
+              .td Наименование 3
+              .td Наименование 4
+            .row
+              .td Наименование 1
+              .td Наименование 2
+              .td Наименование 3
+              .td Наименование 4
+
+    +question()
+    +footer()
