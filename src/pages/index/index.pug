@@ -40,14 +40,22 @@ html(lang='ru')
       }
     ]})
     main
-    #main-sections
-      +main-banner()
-      +main-probiotics()
-      +main-hepatitis-a()
-      +main-advantages()
-      +main-expert()
-      +main-news()
-      +main-contacts()
-      +footer()
+      #main-sections
+        .main-sections__slide
+          +main-banner()
+        .main-sections__slide
+          +main-probiotics()
+        .main-sections__slide
+          +main-hepatitis-a()
+        .main-sections__slide
+          +main-advantages()
+        .main-sections__slide
+          +main-expert()
+        .main-sections__slide
+          +main-news()
+        .main-sections__slide
+          +main-contacts()
+        .main-sections__slide
+          +footer()
     script(src='https://api-maps.yandex.ru/2.1/?apikey=98649c5f-f161-4db2-a5ed-ca666d41bbfa&lang=ru_RU' type='text/javascript' defer='')
     

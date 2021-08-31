@@ -30,9 +30,9 @@ function animateSlideContent(slide) {
 }
 
 function scrollToSlide(index) {
-  if (!$('#main-sections').children()[index] || !$('.js-main-indicator').children()[index]) return;
-  const prevSlide = $('#main-sections').children()[index - 1];
-  const slide = $('#main-sections').children()[index];
+  if (!$('#main-sections .main-sections__slide')[index] || !$('.js-main-indicator').children()[index]) return;
+  const prevSlide = $('#main-sections .main-sections__slide')[index - 1];
+  const slide = $('#main-sections .main-sections__slide')[index];
   const theme = $('.js-main-indicator').children()[index].getAttribute('data-theme');
 
   if (prevSlide) {
@@ -76,11 +76,9 @@ function handler(e) {
   const slides = document.querySelector('#main-sections');
   if (!slides) return;
 
-  const slideHeight =
-    document.documentElement.clientHeight /
-    (slides.childElementCount - 1);
+  const slidesLength = Array.from((document.querySelectorAll('#main-sections .main-sections__slide'))).length;
+  const slideHeight = document.documentElement.clientHeight / (slidesLength - 1);
   const slideIndex = Math.round(document.body.scrollTop / Math.round(slideHeight));
-
   const scrollDirection = e.wheelDelta || (-e.detail / 2);
 
   if (scrollDirection >= 0) {
