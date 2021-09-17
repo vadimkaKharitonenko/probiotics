@@ -60,7 +60,6 @@
 
 .text-page__list .list__items li {
   position: relative;
-
 }
 
 .text-page__list .list__items li::before {
@@ -74,32 +73,34 @@
 }
 
 .text-page__quote {
+  position: relative;
   width: 668px;
   margin: 76px 0 71px auto;
   padding-left: 43px;
   border-left: 3px solid #0e7dd5;
 }
 
-.text-page__quote .info {
-  margin-left: 39px;
-}
-
-.text-page__quote .quote__value {
-  font-family: 'ULI', sans-serif;
+.text-page__quote p {
   margin-bottom: 31px;
+  font-family: 'ULI', sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  color: #2e363e;
 }
 
-.text-page__quote .quote__owner {
-  display: flex;
-  align-items: center;
+.text-page__quote strong {
+  position: absolute;
+  bottom: 70px;
+  margin-left: 39px;
+  font-family: 'UM', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.text-page__quote .owner__name {
-  margin-bottom: 9px;
-  line-height: unset;
-}
-
-.text-page__quote .owner__position {
+.text-page span {
+  position: absolute;
+  bottom: 37px;
+  margin-left: 39px;
   color: #3c84cc;
   font-family: 'UM', sans-serif;
   font-size: 10px;
@@ -134,18 +135,20 @@
   margin-right: 18px;
 }
 
-.text-page__table .table {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+.text-page__table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-collapse: separate;
 }
 
-.text-page__table .table .row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.text-page__table table td {
   padding: 14px 20px 15px;
-}
-
-.text-page__table .table .row {
+  margin: 0;
+  border: 0;
   color: #59646c;
   font-family: 'UR', sans-serif;
   font-size: 14px;
@@ -153,16 +156,16 @@
   line-height: 26px;
 }
 
-.text-page__table .table .row:nth-child(2n + 1) {
-  background-color: #f0f4f9;
-}
-
-.text-page__table .table .row.head {
+.text-page__table table tr:first-child td {
   color: #24313a;
   font-family: 'UM', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 26px;
+}
+
+.text-page__table table tr:nth-child(2n + 1) {
+  background-color: #f0f4f9;
 }
 
 .text-page__partners {
@@ -224,7 +227,7 @@
     padding-left: 52px;
   }
 
-  .text-page__quote .quote__value {
+  .text-page__quote p {
     margin-top: -8px;
     font-size: 22px;
     line-height: 30px;
@@ -321,24 +324,21 @@
     border-left: 0;
   }
 
-  .text-page__quote .quote__value {
+  .text-page__quote p {
     margin-bottom: 26px;
     font-size: 18px;
     line-height: 26px;
   }
 
-  .text-page__quote .quote__owner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .text-page__quote .info {
+  .text-page strong,
+  .text-page span {
+    position: unset;
+    display: block;
     margin-left: 0;
-    margin-top: 21px;
   }
 
-  .text-page__quote .owner__name {
-    margin-bottom: 0;
+  .text-page strong {
+    margin-top: 21px;
   }
 
   .text-page__documents {
